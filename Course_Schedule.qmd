@@ -1,0 +1,97 @@
+---
+title: SISMID 2025 Course Schedule
+---
+
+This is the schedule for the course. From here, you can access all instructions and materials to help you prepare. 
+
+**This schedule is subject to change, so check for updates.**
+
+
+## Notes
+
+* Abbreviations used: 
+  - [DSAIRM = Dynamical Systems Approach to Immune Response Modeling - R package](https://ahgroup.github.io/DSAIRM/). 
+  - [SMI = Simulation Modeling in Immunology - website](https://andreashandel.github.io/SMIcourse/index.html). 
+
+
+* SISMID was online in 2020-2022 and we recorded our lectures. These recorded lectures and a lot of other materials are available on our [Simulation Modeling for Immunology (SMI) website](https://andreashandel.github.io/SMIcourse/). This website is continuously online and will receive future updates as we produce more content.
+
+* This course website will likely remain online, but will not be further updated after the course.
+
+* The DSAIRM package and other mentioned R packages will continue to be available and might receive occasional updates.
+
+* Some of the slides below are in html. If you prefer pdf, it is easiest to open the html file in your browser, click the menu bar on the bottom left, under "Tools", choose "PDF export mode" and then go to the print menu of the browser and print/save as pdf. The Chrome browser generally works best for this.
+
+
+
+## Before course start
+
+_Please go through the tasks below to come prepared to the class._
+
+### General
+
+* Familiarize yourself with this website. Read through all of it.
+* Take a brief look at the companion [Simulation Modeling for Immunology (SMI) website](https://andreashandel.github.io/SMIcourse/).
+* Browse through our paper [Simulation Modelling for Immunologists](files/2020-handel-natrevimm.pdf).
+
+### Software
+
+* Install and set up R and Rstudio. Follow the instructions [on the RStudio page.](https://posit.co/download/rstudio-desktop/). If you need a few more details, [here are some additional brief instructions](https://andreashandel.github.io/SMIcourse/R_and_RStudio.html).
+- Set up and learn about DSAIRM. Go through the content under _Modeling -> DSAIRM_ [on the SMI website](https://andreashandel.github.io/SMIcourse/index.html).
+* If you can, take an initial look at these apps in DSAIRM: __Basic Bacteria Model__ and __Basic Virus Model__. Play around with them and go through (some of) the tasks to get familiar with DSAIRM.
+
+
+
+## Course schedule
+
+
+### **Wednesday 7/16**
+
+Unit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - [Slides](andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html){target="_blank"}
+
+Unit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) - [Slides](paul-slides/2025_Introduction_to_Immunology.pptx){target="_blank"}
+
+
+
+
+
+
+[Homework for tomorrow:]{.underline}
+
+* If you haven't already, take a look at the __Basic Virus Model__ and __Basic Bacteria Model__ apps in DSAIRM and go through - in as much detail as you have time - the "What to do" tasks. You can try yourself first, or walk through it with the help of the solutions: [Basic Virus solution](files/basicvirus_solution.html), [Basic Bacteria solution](files/basicbacteria_solution.html).
+* Take an especially close look at the task 6 of the _Basic Bacteria_ app and the solution code for it, we will use a similar approach tomorrow.
+
+
+### **Thursday 7/17**
+
+Unit 3, 9AM - 10.30AM: Immunology of viral infections (Paul) - [Slides](paul-slides/2025_Viral_Infections.pptx){target="_blank"} 	
+
+Unit 4, 11AM - noon: Modeling of viral infections (Andreas) - [Slides](andreas-presentations/modeling-viral-infections/2025_Virus_Models_Slides.html){target="_blank"}	
+
+Unit 5, 1:00PM – 3PM: Immunology of bacterial infections (Paul) - [Slides](paul-slides/2025_Bacterial_Infections.pptx){target="_blank"} 	
+
+Unit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) - [Slides](andreas-presentations/modeling-bacterial-infections/2025_Bacteria_Models_Slides.html){target="_blank"}
+
+
+### **Friday 7/18**
+
+
+Unit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul) - [Slides](paul-slides/2025_Drug_and_Vaccine_Treatment.pptx){target="_blank"} 	
+
+Unit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas) - [Slides](andreas-presentations/modeling-vaccines-drugs/2025_Vaccines_Drugs_Slides.html){target="_blank"}, [Code 1](files/simulate_pkpdbacteria_ode.R), [Code 2](files/test_pkpdbacteria.R).
+
+Unit 9, 1:30PM – 3PM: Biology of Macroparasites and Coinfections (Paul) - [Slides](paul-slides/2025_Macroparasites_and_Coinfections.pptx){target="_blank"}
+
+Unit 10, 3.30PM – 5PM: Modeling macroparasites and coinfections (Andreas) - [Macroparasites Slides](andreas-presentations/modeling-macroparasites/2025-modeling-macroparasites-slides.html){target="_blank"}, [Coinfection Slides](andreas-presentations/modeling-coinfections/2025-modeling-coinfections-slides.html){target="_blank"}
+
+
+
+
+
+## Any time during and after the course
+
+* Go through any additional content on the [SMI website](https://andreashandel.github.io/SMIcourse/) that you are interested in. 
+* Explore the [DSAIRM models](https://ahgroup.github.io/DSAIRM/). 
+* Ask us questions about any of those topics.
+
+

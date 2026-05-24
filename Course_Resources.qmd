@@ -1,0 +1,30 @@
+---
+title: Course Resources
+---
+
+
+This page lists resources and materials that we'll be using in the course. At the bottom, we point you to further resources that might be of interest.
+
+Note that some of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If you notice anything that's not quite right, let us know.
+
+
+# Online materials
+
+* Materials from previous years, including video recordings and lecture slides, as well as some related materials that go beyond what we cover in the course can be found on our [Simulation Modeling in Immunology (SMI)](https://andreashandel.github.io/SMIcourse/) website. That website also contains a [listing of further resources](https://andreashandel.github.io/SMIcourse/Resources.html) and  
+[a list of terms that are commonly used in Immunology and Modeling](https://andreashandel.github.io/SMIcourse/Glossary.html).
+
+
+
+
+# Papers
+
+* [Simulation Modelling for Immunologists](./files/2020-handel-natrevimm.pdf). An introduction we wrote on the topic. You will see a lot of overlap between that paper and the course materials. You might want to read the paper before the course, then maybe re-read a few more times during and after the course.
+
+* We'll mention primary research papers in the course. For your convenience, [this zip file](https://andreashandel.github.io/SMIcourse/media/SMIreferences.zip) contains most of those references (and some more that we might not get around to talking about).
+
+
+# Software
+
+* We'll be using [R](https://cran.r-project.org/) and the [Dynamical Systems Approach to Immune Response Modeling (DSAIRM) package](https://ahgroup.github.io/DSAIRM/) for the course. We also recommend installing and using [RStudio](https://www.rstudio.com/products/rstudio/). For more details on how to download and install all needed software, see the links in the __Schedule__ page.
+
+
