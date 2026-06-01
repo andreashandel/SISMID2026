@@ -1,2 +1,9 @@
 /.quarto/
 **/*.quarto_ipynb
+
+# skip freeze directory
+/_freeze/
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
