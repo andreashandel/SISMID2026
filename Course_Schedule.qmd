@@ -1,5 +1,5 @@
 ---
-title: SISMID 2025 Course Schedule
+title: SISMID 2026 Course Schedule
 ---
 
 This is the schedule for the course. From here, you can access all instructions and materials to help you prepare. 
@@ -45,7 +45,7 @@ _Please go through the tasks below to come prepared to the class._
 ## Course schedule
 
 
-### **Wednesday 7/16**
+### **Wednesday 7/15**
 
 Unit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - [Slides](andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html){target="_blank"}
 
@@ -62,7 +62,7 @@ Unit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) - [Slides](paul-slides
 * Take an especially close look at the task 6 of the _Basic Bacteria_ app and the solution code for it, we will use a similar approach tomorrow.
 
 
-### **Thursday 7/17**
+### **Thursday 7/16**
 
 Unit 3, 9AM - 10.30AM: Immunology of viral infections (Paul) - [Slides](paul-slides/2025_Viral_Infections.pptx){target="_blank"} 	
 
@@ -73,7 +73,7 @@ Unit 5, 1:00PM – 3PM: Immunology of bacterial infections (Paul) - [Slides](pau
 Unit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) - [Slides](andreas-presentations/modeling-bacterial-infections/2025_Bacteria_Models_Slides.html){target="_blank"}
 
 
-### **Friday 7/18**
+### **Friday 7/17**
 
 
 Unit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul) - [Slides](paul-slides/2025_Drug_and_Vaccine_Treatment.pptx){target="_blank"} 	
