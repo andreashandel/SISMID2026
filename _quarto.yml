@@ -30,9 +30,9 @@ editor:
     wrap: sentence
 engine: knitr
 website:
-  title: "SISMID 2025"
-  site-url: "https://andreashandel.github.io/SISMID2025/"
-  description: "Website for the 2025 SISMID Module on Infectious Diseases, Immunology and Within-Host Models."
+  title: "SISMID 2026"
+  site-url: "https://andreashandel.github.io/SISMID2026/"
+  description: "Website for the 2026 SISMID Module on Infectious Diseases, Immunology and Within-Host Models."
   favicon: /files/sismid-logo.png 
   cookie-consent: false    
   search: true
