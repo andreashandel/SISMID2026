@@ -86,7 +86,7 @@ Unit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul)
 <!-- - [Slides](paul-slides/2025_Drug_and_Vaccine_Treatment.pptx){target="_blank"} 	 -->
 
 Unit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas) 
-<!-- - [Slides](andreas-presentations/modeling-vaccines-drugs/2025_Vaccines_Drugs_Slides.html){target="_blank"}, [Code 1](files/simulate_pkpdbacteria_ode.R), [Code 2](files/test_pkpdbacteria.R). -->
+- [Slides](andreas-presentations/modeling-vaccines-drugs/2025_Vaccines_Drugs_Slides.html){target="_blank"}, [Code 1](files/simulate_pkpdbacteria_ode.R), [Code 2](files/test_pkpdbacteria.R).
 
 Unit 9, 1:30PM – 3PM: Requested topics and a worked modeling example I 
 
