@@ -36,7 +36,7 @@ _Please go through the tasks below to come prepared to the class._
 
 ### Software
 
-* Install and set up R and Rstudio. Follow the instructions [on the RStudio page.](https://posit.co/download/rstudio-desktop/). If you need a few more details, [here are some additional brief instructions](https://andreashandel.github.io/SMIcourse/R_and_RStudio.html).
+* Install and set up R and Rstudio. If you prefer, you can use another IDE, such as Positron or VS Code. If you need a few details, [here are some additional brief instructions for R/RStudio](https://andreashandel.github.io/SMIcourse/R_and_RStudio.html), and [this gives you some more details for R/Positron](https://andreashandel.github.io/mds-tools/courses/courses.html).
 - Set up and learn about DSAIRM. Go through the content under _Modeling -> DSAIRM_ [on the SMI website](https://andreashandel.github.io/SMIcourse/index.html).
 * If you can, take an initial look at these apps in DSAIRM: __Basic Bacteria Model__ and __Basic Virus Model__. Play around with them and go through (some of) the tasks to get familiar with DSAIRM.
 
@@ -47,9 +47,11 @@ _Please go through the tasks below to come prepared to the class._
 
 ### **Wednesday 7/15**
 
-Unit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - [Slides](andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html){target="_blank"}
+Unit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) 
+- [Slides](andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html){target="_blank"}
 
-Unit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) - [Slides](paul-slides/2025_Introduction_to_Immunology.pptx){target="_blank"}
+Unit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) 
+<!-- - [Slides](paul-slides/2025_Introduction_to_Immunology.pptx){target="_blank"} -->
 
 
 
@@ -68,13 +70,13 @@ Unit 3, 9AM - 10.30AM: Immunology of viral infections (Paul)
 <!-- - [Slides](paul-slides/2025_Viral_Infections.pptx){target="_blank"} 	 -->
 
 Unit 4, 11AM - 12.30PM: Modeling of viral infections (Andreas) 
-<!-- - [Slides](andreas-presentations/modeling-viral-infections/2025_Virus_Models_Slides.html){target="_blank"}	 -->
+- [Slides](andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html){target="_blank"}	
 
 Unit 5, 1:30PM – 3PM: Immunology of bacterial infections (Paul) 
 <!-- - [Slides](paul-slides/2025_Bacterial_Infections.pptx){target="_blank"} 	 -->
 
 Unit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) 
-<!-- - [Slides](andreas-presentations/modeling-bacterial-infections/2025_Bacteria_Models_Slides.html){target="_blank"} -->
+- [Slides](andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html){target="_blank"}
 
 
 ### **Friday 7/17**

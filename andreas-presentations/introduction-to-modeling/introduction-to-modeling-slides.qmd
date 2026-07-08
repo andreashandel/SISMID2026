@@ -115,24 +115,16 @@ knitr::include_graphics("./media/nri_review_fig3.png")
 
 ## Mechanistic model example 
 
-:::: {.columns}
-::: {.column width="40%"}
 $$
 \begin{aligned}
-\dot V & = rV-kVT^*\\
-\dot P & = fV - dP \\
-\dot T & = -aPT \\
-\dot T^* & = aPT + gT^*
+\textrm{virus:} & \qquad  \dot V  =  rV-kVT^*, \qquad \qquad \textrm{pMHC:} \qquad  \dot P  =  fV - dP \\
+\textrm{naive T-cell:} & \qquad  \dot T  =  -aPT, \qquad \qquad \textrm{activated T-cell:} \qquad  \dot T^*  =  aPT + gT^*
 \end{aligned}
 $$
-:::
 
-::: {.column width="60%"}
 ```{r predictexample2,  fig.cap='Handel & Antia 2008 J Vir', echo=FALSE, out.width = '100%', fig.align='center'}
 knitr::include_graphics("./media/handel_jvir.png")
 ```
-:::
-::::
 
 
 
