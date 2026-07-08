@@ -7,7 +7,7 @@ toc: FALSE
 
 Welcome to the website for the course/module called [Infectious Diseases, Immunology and Within-Host Models](https://sph.emory.edu/SISMID/modules/infectious-diseases-immunology/index.html), which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://sph.emory.edu/SISMID/index.html). 
 
-The course is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/research/labs/thomas-lab.html). 
+The course is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.fredhutch.org/en/people/t/paul-thomas.html). 
 
 
 # Website content

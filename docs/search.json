@@ -109,7 +109,7 @@
     "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#big-picture",
     "title": "Modeling vaccines and drugs",
     "section": "Big picture",
-    "text": "Big picture\n\nWe generally want to understand pathogen-immune response dynamics with the eventual goal of intervening with drugs or vaccines.\nModeling of drugs is a big area. In the pharma industry, this is knows as pharmacometrics (PM/PMX) or pharmacokinetic/pharmacodynamic (PK/PD) modeling.\nFor mechanistic models like ours, the term Quantitative Systems Pharmacology (QSP) is often used.\nPMX/QSP modeling goes beyond infectious diseases. You could build a model where instead of a pathogen, you have cancer cells, or some compartments describing renal function, or some neuro-receptors in the brain…"
+    "text": "Big picture\n\nWe generally want to understand pathogen-immune response dynamics with the goal of intervening with drugs or vaccines.\nModeling of drugs is a big area. In the pharma industry, this is knows as pharmacometrics (PM/PMX) or pharmacokinetic/pharmacodynamic (PK/PD) modeling.\nFor mechanistic models like ours, the term Quantitative Systems Pharmacology (QSP) is often used.\nPMX/QSP modeling goes beyond infectious diseases. You could build a model where instead of a pathogen, you have cancer cells, or some compartments describing renal function, or some neuro-receptors in the brain…"
   },
   {
     "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#general-idea",
