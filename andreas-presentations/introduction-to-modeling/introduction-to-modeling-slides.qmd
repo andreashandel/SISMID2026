@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Simulation Modeling"
 subtitle: "for within-host infections"
-date: "`r file.mtime(knitr::current_input())`"
+date: today
 author: "[Andreas Handel](https://www.andreashandel.com)"
 format: 
   revealjs:
@@ -17,7 +17,6 @@ format:
     smaller: true
 ---
 
-# Overview
 
 ## Modeling definition
 
@@ -53,9 +52,7 @@ format:
 :::
 
 ::: {.column width="50%"}
-```{r curvefitting2,  fig.cap="[xkcd.com](https://xkcd.com/2048/)", echo=FALSE, out.width = '70%', fig.align='center'}
-knitr::include_graphics("./media/xkcd-curve_fitting.png")
-```
+![[xkcd.com](https://xkcd.com/2048/)](./media/xkcd-curve_fitting.png){width="70%" fig-align="center"}
 :::
 ::::
 
@@ -63,9 +60,7 @@ knitr::include_graphics("./media/xkcd-curve_fitting.png")
 
 ## Non-mechanistic model example
 
-```{r phenomodel1,  fig.cap="Wu et al 2019 Nature Communications.", echo=FALSE, out.width = '70%', fig.align='center'}
-knitr::include_graphics("./media/wu_natcomm.png")
-```
+![Wu et al 2019 Nature Communications.](./media/wu_natcomm.png){width="70%" fig-align="center"}
 
 
 ## Non-mechanistic models - Advantages
@@ -88,9 +83,7 @@ knitr::include_graphics("./media/wu_natcomm.png")
 :::
 
 ::: {.column width="50%"}
-```{r mldilbert,  fig.cap="[xkcd.com](https://xkcd.com/1838/)", echo=FALSE, out.width = '80%', fig.align='center'}
-knitr::include_graphics("./media/xkcd-machine_learning.png")
-```
+![[xkcd.com](https://xkcd.com/1838/)](./media/xkcd-machine_learning.png){width="80%" fig-align="center"}
 :::
 ::::
 
@@ -106,9 +99,7 @@ knitr::include_graphics("./media/xkcd-machine_learning.png")
 :::
 
 ::: {.column width="50%"}
-```{r idprocess,  fig.cap="Handel et al 2020 NRI", echo=FALSE, out.width = '90%', fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig3.png")
-```
+![Handel et al 2020 NRI](./media/nri_review_fig3.png){width="90%" fig-align="center"}
 :::
 ::::
 
@@ -122,9 +113,7 @@ $$
 \end{aligned}
 $$
 
-```{r predictexample2,  fig.cap='Handel & Antia 2008 J Vir', echo=FALSE, out.width = '100%', fig.align='center'}
-knitr::include_graphics("./media/handel_jvir.png")
-```
+![Handel & Antia 2008 J Vir](./media/handel_jvir.png){width="100%" fig-align="center"}
 
 
 
@@ -136,9 +125,9 @@ knitr::include_graphics("./media/handel_jvir.png")
 </div>
 
 <div style="float: right; width: 50%;">
-```{r bacteriafig1,  fig.cap="", echo=FALSE, out.width = '90%', fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig3a.png")
-```
+
+![](./media/nri_review_fig3a.png){width="90%" fig-align="center"}
+
 </div>
 
 
@@ -149,9 +138,9 @@ knitr::include_graphics("./media/nri_review_fig3a.png")
 </div>
 
 <div style="float: right; width: 50%;">
-```{r bacteriafig2,  fig.cap="", echo=FALSE, out.width = '90%', fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig3a.png")
-```
+
+![](./media/nri_review_fig3a.png){width="90%" fig-align="center"}
+
 </div>
 
 
@@ -197,9 +186,7 @@ Using a TB model to explore/predict cytokine-based interventions (Wigginton and 
 
 ## Real-world examples
 Targeted antiviral prophylaxis against an influenza pandemic (Germann et al 2006 PNAS).
-```{r iraflu,  echo=FALSE, fig.cap='', out.width = '50%', fig.align='center'}
-knitr::include_graphics("./media/iraflufigure.jpg")
-```
+![](./media/iraflufigure.jpg){width="40%" fig-align="center"}
 
 
 
@@ -445,9 +432,7 @@ $$
 * It is important to go back and forth between words, diagrams, equations.
 * Diagrams specify a model somewhat, but not completely. The diagram below could be implemented as ODEs or discrete time or stochastic models.
 
-```{r bacteriadiagram,  fig.cap='',  echo=FALSE, out.width = "80%", fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig3a.png")
-```
+![](./media/nri_review_fig3a.png){width="80%" fig-align="center"}
 
 
 
@@ -460,9 +445,9 @@ knitr::include_graphics("./media/nri_review_fig3a.png")
 </div>
 
 <div style="float: right; width: 50%;">
-```{r nribacteria,  out.width = '100%', fig.cap='Handel et al 2020 NRI', echo=FALSE, fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig3.png")
-```
+
+![Handel et al 2020 NRI](./media/nri_review_fig3.png){width="100%" fig-align="center"}
+
 </div>
 
 
