@@ -20,7 +20,7 @@ format:
 ## HBV modeling
 
 - Similar to other chronic viruses (HIV, HCV)
-- [Reviewed here](./media/goyal-et-al-hbv-modeling.pdf)
+- [Reviewed here](https://pubmed.ncbi.nlm.nih.gov/31930181/)
 
 ## HBV models
 
