@@ -7,81 +7,410 @@
     "text": "Welcome to the website for the course/module called Infectious Diseases, Immunology and Within-Host Models, which is part of the Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID).\nThe course is taught by Andreas Handel and Paul Thomas.\n\nWebsite content\nThe Syllabus provides a brief overview with a few logistic details.\nThe Schedule lists the topics, with links to materials. Some of the materials are on a separate site called Simulation Modeling in Immunology which we use as the main, permanent repository for teaching materials related to this course (and other workshops).\nThe Communication section provides information on how course communications are planned to happen.\nThe Resources section contains a listing of the main sources and materials we will be using in this course, as well as links to further resources.\nThe Project section has information and instructions for a - completely optional - course project you can do if you want.\n\n\nGetting started\nStart by briefly skimming through all pages on this website. Then go through and do everything listed in the Before course start section of the Schedule page.\n\n\nNotes\nWe are a Module of SISMID. However, for our purposes, we refer to our module as a course or class, and use module for individual segments, which are further divided into units. We hope this is not too confusing.\nBy default, all links open in the current tab. You’ll likely want external ones to open in a separate tab or window. To do so, you can (with most browsers) hold the Ctrl button when clicking, or do a right-click and select open in new tab/window."
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#big-picture",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#big-picture",
-    "title": "Modeling vaccines and drugs",
-    "section": "Big picture",
-    "text": "Big picture\n\nWe generally want to understand pathogen-immune response dynamics with the goal of intervening with drugs or vaccines.\nModeling of drugs is a big area. In the pharma industry, this is knows as pharmacometrics (PM/PMX) or pharmacokinetic/pharmacodynamic (PK/PD) modeling.\nFor mechanistic models like ours, the term Quantitative Systems Pharmacology (QSP) is often used.\nPMX/QSP modeling goes beyond infectious diseases. You could build a model where instead of a pathogen, you have cancer cells, or some compartments describing renal function, or some neuro-receptors in the brain…"
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#approximate-virus-infection-model",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#approximate-virus-infection-model",
+    "title": "Viral Infection models",
+    "section": "Approximate virus infection model",
+    "text": "Approximate virus infection model\n\\[\n\\begin{aligned}\n\\dot{V} & = g V(1-\\frac{V}{V_{max}}) - d_V V - kVI\\\\\n\\dot{I} & = r VI - d_I I\n\\end{aligned}\n\\]\n\nSimple.\nNot very mechanistic.\nCan lead to patterns that are not too realistic."
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#general-idea",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#general-idea",
-    "title": "Modeling vaccines and drugs",
-    "section": "General Idea",
-    "text": "General Idea\n\nBuild a model without an intervention that includes the components you are interested in:\n\nPathogen\nImmune Response (optional)\n\nAdd drug/treatment into the model\nExplore the impact of the treatment/intervention on the outcomes of interest"
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model",
+    "title": "Viral Infection models",
+    "section": "Basic acute virus infection model",
+    "text": "Basic acute virus infection model\n\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Cells} \\qquad \\dot{U} & =  ? \\\\\n\\textrm{Infected Cells} \\qquad \\dot{I} & =  ? \\\\     \n\\textrm{Virus} \\qquad  \\dot{V} & =  ?\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 1",
-    "text": "Example 1\n\nIFN treatment for HCV infection\nQuestion to answer:\n\nBy what mechanism does the drug work?\nHow effective is the drug?"
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model-1",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model-1",
+    "title": "Viral Infection models",
+    "section": "Basic acute virus infection model",
+    "text": "Basic acute virus infection model\n\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Cells} \\qquad \\dot{U} & =   - bUV \\\\\n\\textrm{Infected Cells} \\qquad \\dot{I} & =  bUV - d_I I \\\\     \n\\textrm{Virus} \\qquad  \\dot{V} & =  pI - d_V V -  bg UV\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-1",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-1",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 1",
-    "text": "Example 1\n\n\\[\\begin{align}\n\\dot U & = n - d_U U - \\color{red}{(1-f)}bUV \\\\\n\\dot I & = \\color{red}{(1-f)}bUV - d_I I \\\\\n\\dot V & = \\color{blue}{(1-e)}pI - d_V V - \\color{red}{(1-f)}gbUV\n\\end{align}\\]\nSimplest assumption: Drug effect is constant."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-chronic-virus-infection-model",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-chronic-virus-infection-model",
+    "title": "Viral Infection models",
+    "section": "Basic chronic virus infection model",
+    "text": "Basic chronic virus infection model\n\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Cells} \\qquad \\dot{U} & = \\color{blue}{n -d_U U} - bUV \\\\\n\\textrm{Infected Cells} \\qquad \\dot{I} & =  bUV - d_I I \\\\     \n\\textrm{Virus} \\qquad  \\dot{V} & =  pI - d_V V -  bg UV\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-2",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-2",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 1",
-    "text": "Example 1\n\\[\\begin{align}\n\\dot U & = n - d_U U - \\color{red}{(1-f)}bUV \\\\\n\\dot I & = \\color{red}{(1-f)}bUV - d_I I \\\\\n\\dot V & = \\color{blue}{(1-e)}pI - d_V V - \\color{red}{(1-f)}gbUV\n\\end{align}\\]\n\nWe can explore if a model that acts through either of these two mechanisms (or neither or both) matches the data.\nUsually, we fit the models to the data and get some statistical answer about which model fits the data better.\nAs a simpler approach, we can run the model and visually compare its predictions to the data."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-virus-infection-models",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-virus-infection-models",
+    "title": "Viral Infection models",
+    "section": "Basic virus infection models",
+    "text": "Basic virus infection models\n\nDynamics of simple viral infection models. A) acute infection. B) chronic infection."
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-exercise",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-exercise",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 1 Exercise",
-    "text": "Example 1 Exercise\n\nThe “Antiviral Treatment Model” in DSAIRM implements the model and guides you through a a set of tasks where you visually compare the model runs to data.\nThe “Influenza Drug Model” uses the same model, but fits data to the model using a statistical approach (least squares).\nExplore either or both of these apps. Start by reading the Overview and Model sections. Then go through the tasks in the What to do section.\nIf you are comfortable with R, you can also get and look at the code and interact with the model through writing your own R code. The Further Information section tells you where to find the code."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#notation-variability",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#notation-variability",
+    "title": "Viral Infection models",
+    "section": "Notation variability",
+    "text": "Notation variability\n\nI’m trying to use the same letters for variables and parameters in these materials.\nIf you read the literature, you’ll see all kinds of variants.\n\n\\[\n\\dot{T} = s - uT - \\beta T V \\\\\n\\dot{T^*}  =  \\beta T V - d T^* \\\\\n\\dot{V}  =  NdT^* - c V -  \\beta g TV\n\\] \\[\n\\dot{x} = \\lambda - dx - \\beta x v \\\\\n\\dot{y}  =  \\beta x v - a y \\\\\n\\dot{v}  =  \\kappa y - u v -  \\beta g xv\n\\]"
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 2",
-    "text": "Example 2\n\nAllow the drug concentration to change over time and have an explicit equation for the drug (Pharmacokinetics, PK).\nHave some more complex mapping from drug concentration to drug impact (Pharmacodynamics, PD)."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models",
+    "title": "Viral Infection models",
+    "section": "Diagrams and Models",
+    "text": "Diagrams and Models\n\nIt is important to go back and forth between words, diagrams, equations.\nDiagrams specify a model somewhat, but not completely."
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2-1",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2-1",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 2",
-    "text": "Example 2\nOld:\n\\[\\begin{align}\n\\dot U & = n - d_U U - bUV \\\\\n\\dot I & = bUV - d_I I \\\\\n\\dot V & = (1-e)pI - d_V V - gb UV \\\\\n\\end{align}\\]\nNew\n\\[\\begin{align}\ne & = E_{max} \\frac{C^k}{C^k+C_{50}} \\qquad \\textrm{(PD)} \\\\\n\\dot C & =  - d_C C \\qquad \\textrm{(PK)} \\\\\nC & =C+C_0 \\textrm{ at } t = t_{interval}  \n\\end{align}\\]\n\nThis is implemented in the Pharmacokinetics and Pharmacodynamics app in DSAIRM. Explore at your own leisure."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models-1",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models-1",
+    "title": "Viral Infection models",
+    "section": "Diagrams and Models",
+    "text": "Diagrams and Models\nThe virus model diagram could be implemented as continuous or discrete (or stochastic) model.\n\n\\[\n\\begin{aligned}\n\\dot{U} & = n -d_U U - bUV \\\\\n\\dot{I} & =  bUV - d_I I \\\\     \n\\dot{V} & =  pI - d_V V -  bg UV\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nU_{t+dt} & = U_{t} + dt(n -d_U U_t - bU_tV_t) \\\\\nI_{t+dt} & = I_{t} + dt( bU_tV_t - d_I I_t )\\\\     \nV_{t+dt} & = V_{t} + dt( pI_t - d_V V_t -  bg U_t V_t )\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 3",
-    "text": "Example 3\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - pBI \\color{blue}{- f(C)B}\\\\\n\\dot{I} & = r BI - d_I I \\\\\n\\color{blue}{\\dot{C}} & \\color{blue}{= ?}\n\\end{aligned}\n\\]\nA drug at concentration \\(C\\) leads to extra killing of bacteria (PD). The drug has some time-course (PK)."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration",
+    "title": "Viral Infection models",
+    "section": "Model Exploration",
+    "text": "Model Exploration\nExplore the “Basic Virus Model” app in DSAIRM"
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3-1",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3-1",
-    "title": "Modeling vaccines and drugs",
-    "section": "Example 3",
-    "text": "Example 3\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - k_IBI  - eB\\\\\n\\dot{I} & = r BI - d_I I \\\\\n\\dot C & =  - d_C C, \\qquad C=C+C_0 \\textrm{ at } t = t_{interval} \\qquad \\textrm{(PK)}\\\\\ne & = E_{max} \\frac{C^n}{C^n+C_{50}} \\qquad \\textrm{(PD)}\n\\end{aligned}\n\\]\n\nThe bad news: This model is not part of DSAIRM.\nThe good news: We can build it ourselves! (DSAIRM Level 3.)"
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-models",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-models",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Models",
+    "text": "Virus and Immune Response Models\n\nThe immune response is incredibly complex, we still don’t know how to model it in much detail.\nWe can nevertheless build and explore models that are a (hopefully) good balance between realism and abstraction."
   },
   {
-    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#hands-on-exercise",
-    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#hands-on-exercise",
-    "title": "Modeling vaccines and drugs",
-    "section": "Hands-on exercise",
-    "text": "Hands-on exercise\n\nGet the code/simulation model for the Basic Bacteria model and the PK/PD model, namely simulate_basicbacteria_ode.R and simulate_pkpdmodel_ode.R.\nTake a look at both R files. All the stuff at the top (any line that starts with #') is just documentation and you can mostly ignore.\nMake a copy of simulate_pkpdmodel_ode.R. You can delete the documentation portion. Modify the code by replacing the \\(U/I/V\\) part of the model with the \\(B/I\\) part from the bacteria model.\nDefinitions/letters for some parameters might have changed between apps. Make sure you call/define them correctly.\nThis might be a bit challenging, but we’ll assist."
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 1",
+    "text": "Virus and Immune Response Model 1\n\nU - uninfected cells\nI - infected cells\nV - (free) virus\nF - innate (interferon) response\nT - adaptive (T-cell) response"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-1",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-1",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 1",
+    "text": "Virus and Immune Response Model 1"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-2",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-2",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 1",
+    "text": "Virus and Immune Response Model 1\n\\[\\begin{aligned}\n\\dot U & = - b U V  \\\\\n\\dot I & = b U V - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = r_T T F - d_T T\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 2",
+    "text": "Virus and Immune Response Model 2\n\nU - uninfected cells\nI - infected cells\nV - (free) virus\nF - innate (interferon) response\nT - adaptive (T-cell) response"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-1",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-1",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 2",
+    "text": "Virus and Immune Response Model 2"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-2",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-2",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 2",
+    "text": "Virus and Immune Response Model 2\n\\[\\begin{aligned}\n\\dot U & = n - d_U U - b U V  \\\\\n\\dot I & = bUV - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = r_T T V - d_T T\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#models-1-and-2",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#models-1-and-2",
+    "title": "Viral Infection models",
+    "section": "Models 1 and 2",
+    "text": "Models 1 and 2\n\n\n\\[\\begin{aligned}\n\\dot U & = - b U V  \\\\\n\\dot I & = b U V - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = r_T T F - d_T T\n\\end{aligned}\\]\n\n\\[\\begin{aligned}\n\\dot U & = \\color{blue}{n - d_U U} - b U V  \\\\\n\\dot I & = bUV - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = \\color{blue}{r_T T V} - d_T T\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-3",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-3",
+    "title": "Viral Infection models",
+    "section": "Virus and Immune Response Model 3",
+    "text": "Virus and Immune Response Model 3\n\nU - uninfected cells\nI - infected cells\nV - (free) virus\nF - innate immune response\nT - CD8 T-cells\nB - B-cells\nA - Antibodies"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-diagram",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-diagram",
+    "title": "Viral Infection models",
+    "section": "Model Diagram",
+    "text": "Model Diagram"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-equations",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-equations",
+    "title": "Viral Infection models",
+    "section": "Model Equations",
+    "text": "Model Equations\n\\[\n\\dot U = n - d_U U - bUV\\\\\n\\dot I = bUV - d_I I - k_T T I\\\\\n\\dot V = \\frac{pI}{1+s_F F} - d_V V - b UV - k_A AV \\\\\n\\dot F = p_F - d_F F + \\frac{V}{V+ h_V}g_F(F_{max}-F)  \\\\\n\\dot T = F V g_T + r_T T\\\\\n\\dot B = \\frac{F V}{F V + h_F} g_B B \\\\\n\\dot A = r_A B - d_A A - k_A A V\n\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration-1",
+    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration-1",
+    "title": "Viral Infection models",
+    "section": "Model Exploration",
+    "text": "Model Exploration\nExplore any/all of the “IR” models in the virus models section"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#basic-bacteria-infection-model",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#basic-bacteria-infection-model",
+    "title": "Bacterial Infection models",
+    "section": "Basic bacteria infection model",
+    "text": "Basic bacteria infection model\n\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - kBI\\\\\n\\dot{I} & = r BI - d_I I\n\\end{aligned}\n\\]\n\nCan also be other extracellular organisms. Probably not ideal for intra-cellular bacteria (e.g., TB)."
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#extended-bacteria-infection-model",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#extended-bacteria-infection-model",
+    "title": "Bacterial Infection models",
+    "section": "Extended bacteria infection model",
+    "text": "Extended bacteria infection model\n\n\\[\\begin{align}\n\\dot B &= g B (1-\\frac{B}{B_{max}}) - d_B B - k_I B I - k_A B A \\\\\n\\dot I &= r_I B (1 -\\frac{I}{I_{max}} )  - d_I I \\\\\n\\dot A &= r_A \\frac{\\log(I)}{h+\\log(I)} A  - d_A A\n\\end{align}\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-uses",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-uses",
+    "title": "Bacterial Infection models",
+    "section": "Model uses",
+    "text": "Model uses"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration",
+    "text": "Model Exploration\n\nLooking at the dynamics (time-series) of a model can be useful.\nOften, we are not mainly interested in the time series, but instead some more specific quantity, e.g. total number of pathogen/infected cells, steady state values, etc.\nWe usually want to to know how such outcome(s) of interest vary with some parameter(s).\nWhat do we need to do to answer that question?"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-1",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-1",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration",
+    "text": "Model Exploration\n\nChoose some parameter values.\nRun the simulation model.\nRecord quantities/outcomes of interest.\nChoose another set of parameter values (usually we only vary one at a time).\nRepeat steps 2-4 until you got all parameter-outcome pairs of interest.\nReport (e.g. plot) your findings."
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration example 1",
+    "text": "Model Exploration example 1\n\nQuestion: How does drug dosing impact the emergence of drug resistance in the presence of different types of immune responses?\nApproach: Build several simple models and explore (after Handel et al 2009 JTB).\n\n\\[\n\\begin{aligned}\n\\dot{B_s} & = (1-\\mu)g_s B_s(1-\\frac{B_s+B_r}{B_{max}})  -k_I I B_s - \\frac{k_s C}{C+C_{50}^s} B_s\\\\\n\\dot{B_r} & = (\\mu g_s B_s + g_r B_r)(1-\\frac{B_s+B_r}{B_{max}})  -k_I I B_r - \\frac{k_r C}{C+C_{50}^r} B_r\\\\\n\\dot{I} & = r (B_s+B_n)-d_I I   \\\\\n\\dot C & =  - d_C C, \\qquad C=C+C_0 \\textrm{ at } t = t_{interval} \\\\\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-1",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-1",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration example 1",
+    "text": "Model Exploration example 1\n\nFig 3 of Handel 2009 JTB. IR: dotted lines. Sensitive strain: dashed lines. Resistant strains: solid gray (high fitness) and black (low fitness) lines. 4 different immune response models."
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-2",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-2",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration example 1",
+    "text": "Model Exploration example 1\n\nVary drug concentration, explore time for resistance to emerge.\n\n\nFig 5 of Handel 2009 JTB"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration example 2",
+    "text": "Model Exploration example 2\n\nQuestion: How dose the antigen dose for a killed (influenza) vaccine affect antibody levels post vaccination?\nApproach: Build a simple model and explore (after Handel et al 2018 PCB).\n\n\\[\n\\begin{aligned}\n\\dot V &=  - d_V V  - k_A AV \\\\\n\\dot F &= p_F - d_F F + \\frac{V}{V+ h_V}g_F(F_{max}-F)  \\\\\n\\dot B & = \\frac{F V}{F V + h_F} g_B B \\\\\n\\dot A & = r_A B - d_A A - k_A A V\n\\end{aligned}\n\\] (This is a simpler version of the virus and immune response DSAIRM model.)"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2-1",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2-1",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration example 2",
+    "text": "Model Exploration example 2\nRun model for different antigen doses (\\(V_0\\))."
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-3",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-3",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration example 1",
+    "text": "Model Exploration example 1\n\n\n\nRun model for different \\(V_0\\), record antibodies \\(A\\) at end of each simulation for each \\(V_0\\).\nUse this equation to compute protection as a function of antibody level. \\(P= 1 - \\frac{1}{e^{k_1(\\log(A)-k_2)}}\\)"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-comments",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-comments",
+    "title": "Bacterial Infection models",
+    "section": "Exploration comments",
+    "text": "Exploration comments\n\nIf the system/question is very simple, we might not need a model.\nInteractions among pathogens and the immune response are often complex. If we know little about our system and its behavior, building and exploring simple models is often a useful first step."
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#back-to-bacteria",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#back-to-bacteria",
+    "title": "Bacterial Infection models",
+    "section": "Back to bacteria",
+    "text": "Back to bacteria\n\nAssume we think this model is a good approximation for a real system we are interested in.\nWe want to explore/predict the peak burden of bacteria if we were able to increase the induction of the immune response (parameter \\(r\\)), e.g. by giving a drug.\n\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - kBI\\\\\n\\dot{I} & = r BI - d_I I\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-2",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-2",
+    "title": "Bacterial Infection models",
+    "section": "Model Exploration",
+    "text": "Model Exploration\n\nChoose some parameter values.\nRun the simulation model.\nRecord quantities/outcomes of interest. Here: \\(B\\) at peak.\nChoose another set of parameter values (usually we only vary one at a time). Here: \\(r\\).\nRepeat steps 2-4 until you got all parameter-outcome pairs of interest.\nReport (e.g. plot) your findings."
+  },
+  {
+    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-exercise",
+    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-exercise",
+    "title": "Bacterial Infection models",
+    "section": "Exploration exercise",
+    "text": "Exploration exercise\nComplete Beginner: Tedious: Run the Basic Bacteria Model app repeatedly for different values of \\(r\\), record \\(B_{max}\\) for each run. Then plot the results. Easier: Use the Bacteria Model Exploration app to answer the question.\nAdvanced Beginner: Start an R script. Write code that implements a loop over a parameter of your choice, for each value calls the simulate_basicbacteria_ode() model function, and computes some outcome of interest. If needed, you can copy/paste/modify the solution from task 6 you looked at as homework.\nIntermediate: Use the Extended Bacteria Model app and write some R code to loop over 2 (or more) parameters of your choice and plot the results (whatever outcome you consider interesting to explore).\nAdvanced: Extend the code of the Extended Bacteria Model (for instance by implementing 2 innate response players, such as NK cells and IFN-gamma). Then explore some outcome of your choice as a function of some of the model parameters."
+  },
+  {
+    "objectID": "andreas-presentations/hbv-modeling/HBV_Modeling.html#hbv-modeling",
+    "href": "andreas-presentations/hbv-modeling/HBV_Modeling.html#hbv-modeling",
+    "title": "HBV modeling",
+    "section": "HBV modeling",
+    "text": "HBV modeling\n\nSimilar to other chronic viruses (HIV, HCV)\nReviewed here"
+  },
+  {
+    "objectID": "andreas-presentations/hbv-modeling/HBV_Modeling.html#hbv-models",
+    "href": "andreas-presentations/hbv-modeling/HBV_Modeling.html#hbv-models",
+    "title": "HBV modeling",
+    "section": "HBV models",
+    "text": "HBV models"
+  },
+  {
+    "objectID": "andreas-presentations/hbv-modeling/HBV_Modeling.html#model-parameter-estimates",
+    "href": "andreas-presentations/hbv-modeling/HBV_Modeling.html#model-parameter-estimates",
+    "title": "HBV modeling",
+    "section": "Model parameter estimates",
+    "text": "Model parameter estimates"
+  },
+  {
+    "objectID": "andreas-presentations/hbv-modeling/HBV_Modeling.html#model-parameter-estimates-1",
+    "href": "andreas-presentations/hbv-modeling/HBV_Modeling.html#model-parameter-estimates-1",
+    "title": "HBV modeling",
+    "section": "Model parameter estimates",
+    "text": "Model parameter estimates"
+  },
+  {
+    "objectID": "andreas-presentations/hbv-modeling/HBV_Modeling.html#summary",
+    "href": "andreas-presentations/hbv-modeling/HBV_Modeling.html#summary",
+    "title": "HBV modeling",
+    "section": "Summary",
+    "text": "Summary\nHBV models have been used to estimate the impact of therapy/interventions, and to estimate biologically relevant quantities (e.g. lifespan of virus and infected cells)."
+  },
+  {
+    "objectID": "Course_Schedule.html",
+    "href": "Course_Schedule.html",
+    "title": "SISMID 2026 Course Schedule",
+    "section": "",
+    "text": "This is the schedule for the course. From here, you can access all instructions and materials to help you prepare.\nThis schedule is subject to change, so check for updates."
+  },
+  {
+    "objectID": "Course_Schedule.html#notes",
+    "href": "Course_Schedule.html#notes",
+    "title": "SISMID 2026 Course Schedule",
+    "section": "Notes",
+    "text": "Notes\n\nAbbreviations used:\n\nDSAIRM = Dynamical Systems Approach to Immune Response Modeling - R package.\nSMI = Simulation Modeling in Immunology - website.\n\nSISMID was online in 2020-2022 and we recorded our lectures. These recorded lectures and a lot of other materials are available on our Simulation Modeling for Immunology (SMI) website. This website is continuously online and will receive future updates as we produce more content.\nThis course website will likely remain online, but will not be further updated after the course.\nThe DSAIRM package and other mentioned R packages will continue to be available and might receive occasional updates.\nSome of the slides below are in html. If you prefer pdf, it is easiest to open the html file in your browser, click the menu bar on the bottom left, under “Tools”, choose “PDF export mode” and then go to the print menu of the browser and print/save as pdf. The Chrome browser generally works best for this."
+  },
+  {
+    "objectID": "Course_Schedule.html#before-course-start",
+    "href": "Course_Schedule.html#before-course-start",
+    "title": "SISMID 2026 Course Schedule",
+    "section": "Before course start",
+    "text": "Before course start\nPlease go through the tasks below to come prepared to the class.\n\nGeneral\n\nFamiliarize yourself with this website. Read through all of it.\nTake a brief look at the companion Simulation Modeling for Immunology (SMI) website.\nBrowse through our paper Simulation Modelling for Immunologists.\n\n\n\nSoftware\n\nInstall and set up R and Rstudio. If you prefer, you can use another IDE, such as Positron or VS Code. If you need a few details, here are some additional brief instructions for R/RStudio, and this gives you some more details for R/Positron.\nSet up and learn about DSAIRM. Go through the content under Modeling -&gt; DSAIRM on the SMI website.\nIf you can, take an initial look at these apps in DSAIRM: Basic Bacteria Model and Basic Virus Model. Play around with them and go through (some of) the tasks to get familiar with DSAIRM."
+  },
+  {
+    "objectID": "Course_Schedule.html#course-schedule",
+    "href": "Course_Schedule.html#course-schedule",
+    "title": "SISMID 2026 Course Schedule",
+    "section": "Course schedule",
+    "text": "Course schedule\n\nWednesday 7/15\nUnit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - Slides\nUnit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) - Slides\nHomework for tomorrow:\n\nIf you haven’t already, take a look at the Basic Virus Model and Basic Bacteria Model apps in DSAIRM and go through - in as much detail as you have time - the “What to do” tasks. You can try yourself first, or walk through it with the help of the solutions: Basic Virus solution, Basic Bacteria solution.\nTake an especially close look at task 6 of the Basic Bacteria app and the solution code for it, we will use a similar approach tomorrow.\n\n\n\nThursday 7/16\nUnit 3, 9AM - 10.30AM: Immunology of viral infections (Paul) - Slides\nUnit 4, 11AM - 12.30PM: Modeling of viral infections (Andreas) - Slides\nUnit 5, 1:30PM – 3PM: Immunology of bacterial infections (Paul) - Slides\nUnit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) - Slides\n\n\nFriday 7/17\nUnit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul) - Slides\nUnit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas) - Slides \nUnit 9, 1:30PM – 3PM: Requested topics I\nUnit 10, 3.30PM – 5PM: Requested topics II - Phage Modeling Slides - HBV Modeling Slides"
+  },
+  {
+    "objectID": "Course_Schedule.html#any-time-during-and-after-the-course",
+    "href": "Course_Schedule.html#any-time-during-and-after-the-course",
+    "title": "SISMID 2026 Course Schedule",
+    "section": "Any time during and after the course",
+    "text": "Any time during and after the course\n\nGo through any additional content on the SMI website that you are interested in.\nExplore the DSAIRM models.\nAsk us questions about any of those topics."
+  },
+  {
+    "objectID": "Course_Project.html",
+    "href": "Course_Project.html",
+    "title": "Course Project Information",
+    "section": "",
+    "text": "Overview\nThis document contains suggestions for a completely optional course project. If you have any questions related to a potential project, we’ll be happy to discuss it with you.\n\n\nProject Topic Ideas\nYou might already have a specific question or system in mind that you are interested in modeling. Or maybe this course leads to some ideas. If you are new to modeling, it might be difficult to decide what questions can be suitably addressed using simulations models. Some thoughts on this can be found in this review paper we wrote. We discuss 3 major model uses, namely Exploration, Prediction and Fitting.\nGiven the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest that if you want to try a project within the timeframe of the course, focus on doing an Exploration project.\n\n\nProject Implementation Ideas\nHere are some general pointers on how you could go about doing a project, depending on your comfort level writing models and code. There are obviously trade-offs among those approaches. The easier ones (no model building, no coding) are less flexible, the more flexible ones require more coding. Pick the one that works well for your skill and interest level.\n\nRequires no model building and no coding: Use one of the apps included in DSAIRM, choose parameter values that correspond to the system you are trying to model, then explore the model through the graphical user interface.\nRequires no model building and a little bit of coding: Use one of the apps included in DSAIRM. Instead of accessing it through the graphical interface, write a few lines of code that call the simulator functions. See level 2 description in the DSAIRM tutorial.\nRequires model building but no coding: Use the modelbuilder R package to build your own model and explore it graphically. Note that modelbuilder is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know. Also, at this stage modelbuilder is not suitable to build very complex models, so if you use it, keep your model simple.\nRequires some model building and coding: Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the DSAIRM tutorial.\nRequires some model building and coding: Use the modelbuilder R package to build an initial version of your model. Export the model code from modelbuilder, edit further and run the code to answer your question.\n\n\n\nProject Logistics\nTo repeat, this is completely optional, so if you don’t have the time or interest, you can just focus on learning the course material and not try your own project. If you do try, it is completely up to you how to structure your project. You can just play around, or you can try to write a formal report/paper (e.g., using Quarto). Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group, but you are certainly welcome to try and do so.\nIf you get results from your project that you think are worth sharing, let us know. We will be happy to provide feedback and comments. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time at the end for anyone who wants to present and discuss what they did. If you want to do that, let us know.\n\n\nOther possible project ideas\nHere are two other types of projects you could give a try:\n\nBuild a new model in modelbuilder, explore it either through modelbuilder or on your own and write some report (I suggest using Quarto for that but you can use anything) about what you did and found. I’m starting to build a library of models that could be included in modelbuilder and used by others. So if you end up with a nice, well documented and suitable model, I would love to include it in modelbuilder for others to use or build on. You would of course be credited as model contributor.\nI’m always looking to include more apps into DSAIRM. You could try to build a new model (using one of the existing _simulate..._ functions and adjusting it), together with documentation. For the documentation, this would need to be written as RMarkdown (Rmd) file. Here is an example of the Rmd file for the basic bacteria model that you can look at and use as template. You can ignore the R code and just replace the existing text with text for your model/app. The The Model and What to do sections are the most important ones. If suitable, I’d love to integrate your app into DSAIRM. You’d of course be listed as package contributor."
+  },
+  {
+    "objectID": "Course_Communication.html",
+    "href": "Course_Communication.html",
+    "title": "Course Communication",
+    "section": "",
+    "text": "The main mode of communication is face-to-face 😊. Talk to us any time during the course if you have any questions, suggestions, feedback, etc.\nThere is also a Slack channel for this module. We will monitor it, so you can send us a message there. And you can also reach out to us by email."
+  },
+  {
+    "objectID": "Course_Resources.html",
+    "href": "Course_Resources.html",
+    "title": "Course Resources",
+    "section": "",
+    "text": "This page lists resources and materials that we’ll be using in the course. At the bottom, we point you to further resources that might be of interest.\nNote that some of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If you notice anything that’s not quite right, let us know.\n\nOnline materials\n\nMaterials from previous years, including video recordings and lecture slides, as well as some related materials that go beyond what we cover in the course can be found on our Simulation Modeling in Immunology (SMI) website. That website also contains a listing of further resources and\na list of terms that are commonly used in Immunology and Modeling.\n\n\n\nPapers\n\nSimulation Modelling for Immunologists. An introduction we wrote on the topic. You will see a lot of overlap between that paper and the course materials. You might want to read the paper before the course, then maybe re-read a few more times during and after the course.\nWe’ll mention primary research papers in the course. For your convenience, this zip file contains most of those references (and some more that we might not get around to talking about).\n\n\n\nSoftware\n\nWe’ll be using R and the Dynamical Systems Approach to Immune Response Modeling (DSAIRM) package for the course. We also recommend installing and using RStudio. For more details on how to download and install all needed software, see the links in the Schedule page."
+  },
+  {
+    "objectID": "Course_Syllabus.html",
+    "href": "Course_Syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Instructors: Paul Thomas and Andreas Handel\nCourse Meeting Time and Location: See Schedule"
+  },
+  {
+    "objectID": "Course_Syllabus.html#course-information",
+    "href": "Course_Syllabus.html#course-information",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Instructors: Paul Thomas and Andreas Handel\nCourse Meeting Time and Location: See Schedule"
+  },
+  {
+    "objectID": "Course_Syllabus.html#textbook-and-other-course-material",
+    "href": "Course_Syllabus.html#textbook-and-other-course-material",
+    "title": "Syllabus",
+    "section": "Textbook and Other Course Material",
+    "text": "Textbook and Other Course Material\nAll course materials are provided. We link to all materials you need and explain how to get them."
+  },
+  {
+    "objectID": "Course_Syllabus.html#course-description",
+    "href": "Course_Syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nThis course provides an introduction to simulation modeling of pathogens and the immune response on the within-host level.\nYou will learn the basic biology and immunology of several common pathogens. You will also learn about simulation models and how they can be used to study pathogen and immune response dynamics within an infected host.\nThis course is an introductory overview course. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. But you are certainly welcome and encouraged to dig deeper, and we will provide information and resources to allow you to learn more about the topics we cover."
+  },
+  {
+    "objectID": "Course_Syllabus.html#grading",
+    "href": "Course_Syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\nThis course has no grades. You will get a certificate of completion at the end."
+  },
+  {
+    "objectID": "Course_Syllabus.html#class-attendance",
+    "href": "Course_Syllabus.html#class-attendance",
+    "title": "Syllabus",
+    "section": "Class Attendance",
+    "text": "Class Attendance\nAttendance is not required, but we hope you will attend all sessions. We also hope that you will be an active participant and ask questions, join discussions, and contribute in any way you feel willing and able."
+  },
+  {
+    "objectID": "Course_Syllabus.html#prerequisites",
+    "href": "Course_Syllabus.html#prerequisites",
+    "title": "Syllabus",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWe assume you have some basic biological and computer literacy. Some of you may know a good bit of immunology, or have solid statistical, modeling or coding experience. We understand everyone will come with different skill sets. Since this is an introductory course, we try to make things as understandable as possible for everyone. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging).\nWe “promise” that you will be both bored and confused at least once during the course 😁. We hope that you will still find the majority of the material we teach interesting and helpful. Please don’t hesitate to give us feedback during the course (in real time) if you think we are going too slow or too fast, or could otherwise improve."
+  },
+  {
+    "objectID": "Course_Syllabus.html#getting-help",
+    "href": "Course_Syllabus.html#getting-help",
+    "title": "Syllabus",
+    "section": "Getting Help",
+    "text": "Getting Help\nIf you have questions about any aspect of the course, please do not hesitate to talk to us."
+  },
+  {
+    "objectID": "Course_Syllabus.html#course-outline",
+    "href": "Course_Syllabus.html#course-outline",
+    "title": "Syllabus",
+    "section": "Course Outline",
+    "text": "Course Outline\nFor an outline of the course, please see the course Schedule document."
   },
   {
     "objectID": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#modeling-definition",
@@ -343,382 +672,88 @@
     "text": "Homework\n\nIf you haven’t already, install DSAIRM and take a look at the Basic Virus Model and Basic Bacteria Model apps.\nStart looking at and going through the “What to do” tasks. You can try yourself first (better for learning), or look at the solutions right away (only suggested if you feel completely lost).\nTake an especially close look at the solution for task 6 in the Basic Bacteria app, we will use a similar approach tomorrow.\nLinks to solution files are in the schedule of the class website."
   },
   {
-    "objectID": "Course_Schedule.html",
-    "href": "Course_Schedule.html",
-    "title": "SISMID 2026 Course Schedule",
-    "section": "",
-    "text": "This is the schedule for the course. From here, you can access all instructions and materials to help you prepare.\nThis schedule is subject to change, so check for updates."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#big-picture",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#big-picture",
+    "title": "Modeling vaccines and drugs",
+    "section": "Big picture",
+    "text": "Big picture\n\nWe generally want to understand pathogen-immune response dynamics with the goal of intervening with drugs or vaccines.\nModeling of drugs is a big area. In the pharma industry, this is knows as pharmacometrics (PM/PMX) or pharmacokinetic/pharmacodynamic (PK/PD) modeling.\nFor mechanistic models like ours, the term Quantitative Systems Pharmacology (QSP) is often used.\nPMX/QSP modeling goes beyond infectious diseases. You could build a model where instead of a pathogen, you have cancer cells, or some compartments describing renal function, or some neuro-receptors in the brain…"
   },
   {
-    "objectID": "Course_Schedule.html#notes",
-    "href": "Course_Schedule.html#notes",
-    "title": "SISMID 2026 Course Schedule",
-    "section": "Notes",
-    "text": "Notes\n\nAbbreviations used:\n\nDSAIRM = Dynamical Systems Approach to Immune Response Modeling - R package.\nSMI = Simulation Modeling in Immunology - website.\n\nSISMID was online in 2020-2022 and we recorded our lectures. These recorded lectures and a lot of other materials are available on our Simulation Modeling for Immunology (SMI) website. This website is continuously online and will receive future updates as we produce more content.\nThis course website will likely remain online, but will not be further updated after the course.\nThe DSAIRM package and other mentioned R packages will continue to be available and might receive occasional updates.\nSome of the slides below are in html. If you prefer pdf, it is easiest to open the html file in your browser, click the menu bar on the bottom left, under “Tools”, choose “PDF export mode” and then go to the print menu of the browser and print/save as pdf. The Chrome browser generally works best for this."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#general-idea",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#general-idea",
+    "title": "Modeling vaccines and drugs",
+    "section": "General Idea",
+    "text": "General Idea\n\nBuild a model without an intervention that includes the components you are interested in:\n\nPathogen\nImmune Response (optional)\n\nAdd drug/treatment into the model\nExplore the impact of the treatment/intervention on the outcomes of interest"
   },
   {
-    "objectID": "Course_Schedule.html#before-course-start",
-    "href": "Course_Schedule.html#before-course-start",
-    "title": "SISMID 2026 Course Schedule",
-    "section": "Before course start",
-    "text": "Before course start\nPlease go through the tasks below to come prepared to the class.\n\nGeneral\n\nFamiliarize yourself with this website. Read through all of it.\nTake a brief look at the companion Simulation Modeling for Immunology (SMI) website.\nBrowse through our paper Simulation Modelling for Immunologists.\n\n\n\nSoftware\n\nInstall and set up R and Rstudio. If you prefer, you can use another IDE, such as Positron or VS Code. If you need a few details, here are some additional brief instructions for R/RStudio, and this gives you some more details for R/Positron.\nSet up and learn about DSAIRM. Go through the content under Modeling -&gt; DSAIRM on the SMI website.\nIf you can, take an initial look at these apps in DSAIRM: Basic Bacteria Model and Basic Virus Model. Play around with them and go through (some of) the tasks to get familiar with DSAIRM."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 1",
+    "text": "Example 1\n\nIFN treatment for HCV infection\nQuestion to answer:\n\nBy what mechanism does the drug work?\nHow effective is the drug?"
   },
   {
-    "objectID": "Course_Schedule.html#course-schedule",
-    "href": "Course_Schedule.html#course-schedule",
-    "title": "SISMID 2026 Course Schedule",
-    "section": "Course schedule",
-    "text": "Course schedule\n\nWednesday 7/15\nUnit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - Slides\nUnit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) - Slides\nHomework for tomorrow:\n\nIf you haven’t already, take a look at the Basic Virus Model and Basic Bacteria Model apps in DSAIRM and go through - in as much detail as you have time - the “What to do” tasks. You can try yourself first, or walk through it with the help of the solutions: Basic Virus solution, Basic Bacteria solution.\nTake an especially close look at task 6 of the Basic Bacteria app and the solution code for it, we will use a similar approach tomorrow.\n\n\n\nThursday 7/16\nUnit 3, 9AM - 10.30AM: Immunology of viral infections (Paul) - Slides\nUnit 4, 11AM - 12.30PM: Modeling of viral infections (Andreas) - Slides\nUnit 5, 1:30PM – 3PM: Immunology of bacterial infections (Paul) - Slides\nUnit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) - Slides\n\n\nFriday 7/17\nUnit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul) - Slides\nUnit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas) - Slides \nUnit 9, 1:30PM – 3PM: Requested topics and a worked modeling example I\nUnit 10, 3.30PM – 5PM: Requested topics and a worked modeling example II"
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-1",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-1",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 1",
+    "text": "Example 1\n\n\\[\\begin{align}\n\\dot U & = n - d_U U - \\color{red}{(1-f)}bUV \\\\\n\\dot I & = \\color{red}{(1-f)}bUV - d_I I \\\\\n\\dot V & = \\color{blue}{(1-e)}pI - d_V V - \\color{red}{(1-f)}gbUV\n\\end{align}\\]\nSimplest assumption: Drug effect is constant."
   },
   {
-    "objectID": "Course_Schedule.html#any-time-during-and-after-the-course",
-    "href": "Course_Schedule.html#any-time-during-and-after-the-course",
-    "title": "SISMID 2026 Course Schedule",
-    "section": "Any time during and after the course",
-    "text": "Any time during and after the course\n\nGo through any additional content on the SMI website that you are interested in.\nExplore the DSAIRM models.\nAsk us questions about any of those topics."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-2",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-2",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 1",
+    "text": "Example 1\n\\[\\begin{align}\n\\dot U & = n - d_U U - \\color{red}{(1-f)}bUV \\\\\n\\dot I & = \\color{red}{(1-f)}bUV - d_I I \\\\\n\\dot V & = \\color{blue}{(1-e)}pI - d_V V - \\color{red}{(1-f)}gbUV\n\\end{align}\\]\n\nWe can explore if a model that acts through either of these two mechanisms (or neither or both) matches the data.\nUsually, we fit the models to the data and get some statistical answer about which model fits the data better.\nAs a simpler approach, we can run the model and visually compare its predictions to the data."
   },
   {
-    "objectID": "Course_Project.html",
-    "href": "Course_Project.html",
-    "title": "Course Project Information",
-    "section": "",
-    "text": "Overview\nThis document contains suggestions for a completely optional course project. If you have any questions related to a potential project, we’ll be happy to discuss it with you.\n\n\nProject Topic Ideas\nYou might already have a specific question or system in mind that you are interested in modeling. Or maybe this course leads to some ideas. If you are new to modeling, it might be difficult to decide what questions can be suitably addressed using simulations models. Some thoughts on this can be found in this review paper we wrote. We discuss 3 major model uses, namely Exploration, Prediction and Fitting.\nGiven the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest that if you want to try a project within the timeframe of the course, focus on doing an Exploration project.\n\n\nProject Implementation Ideas\nHere are some general pointers on how you could go about doing a project, depending on your comfort level writing models and code. There are obviously trade-offs among those approaches. The easier ones (no model building, no coding) are less flexible, the more flexible ones require more coding. Pick the one that works well for your skill and interest level.\n\nRequires no model building and no coding: Use one of the apps included in DSAIRM, choose parameter values that correspond to the system you are trying to model, then explore the model through the graphical user interface.\nRequires no model building and a little bit of coding: Use one of the apps included in DSAIRM. Instead of accessing it through the graphical interface, write a few lines of code that call the simulator functions. See level 2 description in the DSAIRM tutorial.\nRequires model building but no coding: Use the modelbuilder R package to build your own model and explore it graphically. Note that modelbuilder is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know. Also, at this stage modelbuilder is not suitable to build very complex models, so if you use it, keep your model simple.\nRequires some model building and coding: Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the DSAIRM tutorial.\nRequires some model building and coding: Use the modelbuilder R package to build an initial version of your model. Export the model code from modelbuilder, edit further and run the code to answer your question.\n\n\n\nProject Logistics\nTo repeat, this is completely optional, so if you don’t have the time or interest, you can just focus on learning the course material and not try your own project. If you do try, it is completely up to you how to structure your project. You can just play around, or you can try to write a formal report/paper (e.g., using Quarto). Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group, but you are certainly welcome to try and do so.\nIf you get results from your project that you think are worth sharing, let us know. We will be happy to provide feedback and comments. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time at the end for anyone who wants to present and discuss what they did. If you want to do that, let us know.\n\n\nOther possible project ideas\nHere are two other types of projects you could give a try:\n\nBuild a new model in modelbuilder, explore it either through modelbuilder or on your own and write some report (I suggest using Quarto for that but you can use anything) about what you did and found. I’m starting to build a library of models that could be included in modelbuilder and used by others. So if you end up with a nice, well documented and suitable model, I would love to include it in modelbuilder for others to use or build on. You would of course be credited as model contributor.\nI’m always looking to include more apps into DSAIRM. You could try to build a new model (using one of the existing _simulate..._ functions and adjusting it), together with documentation. For the documentation, this would need to be written as RMarkdown (Rmd) file. Here is an example of the Rmd file for the basic bacteria model that you can look at and use as template. You can ignore the R code and just replace the existing text with text for your model/app. The The Model and What to do sections are the most important ones. If suitable, I’d love to integrate your app into DSAIRM. You’d of course be listed as package contributor."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-exercise",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-1-exercise",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 1 Exercise",
+    "text": "Example 1 Exercise\n\nThe “Antiviral Treatment Model” in DSAIRM implements the model and guides you through a a set of tasks where you visually compare the model runs to data.\nThe “Influenza Drug Model” uses the same model, but fits data to the model using a statistical approach (least squares).\nExplore either or both of these apps. Start by reading the Overview and Model sections. Then go through the tasks in the What to do section.\nIf you are comfortable with R, you can also get and look at the code and interact with the model through writing your own R code. The Further Information section tells you where to find the code."
   },
   {
-    "objectID": "Course_Communication.html",
-    "href": "Course_Communication.html",
-    "title": "Course Communication",
-    "section": "",
-    "text": "The main mode of communication is face-to-face 😊. Talk to us any time during the course if you have any questions, suggestions, feedback, etc.\nThere is also a Slack channel for this module. We will monitor it, so you can send us a message there. And you can also reach out to us by email."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 2",
+    "text": "Example 2\n\nAllow the drug concentration to change over time and have an explicit equation for the drug (Pharmacokinetics, PK).\nHave some more complex mapping from drug concentration to drug impact (Pharmacodynamics, PD)."
   },
   {
-    "objectID": "Course_Resources.html",
-    "href": "Course_Resources.html",
-    "title": "Course Resources",
-    "section": "",
-    "text": "This page lists resources and materials that we’ll be using in the course. At the bottom, we point you to further resources that might be of interest.\nNote that some of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If you notice anything that’s not quite right, let us know.\n\nOnline materials\n\nMaterials from previous years, including video recordings and lecture slides, as well as some related materials that go beyond what we cover in the course can be found on our Simulation Modeling in Immunology (SMI) website. That website also contains a listing of further resources and\na list of terms that are commonly used in Immunology and Modeling.\n\n\n\nPapers\n\nSimulation Modelling for Immunologists. An introduction we wrote on the topic. You will see a lot of overlap between that paper and the course materials. You might want to read the paper before the course, then maybe re-read a few more times during and after the course.\nWe’ll mention primary research papers in the course. For your convenience, this zip file contains most of those references (and some more that we might not get around to talking about).\n\n\n\nSoftware\n\nWe’ll be using R and the Dynamical Systems Approach to Immune Response Modeling (DSAIRM) package for the course. We also recommend installing and using RStudio. For more details on how to download and install all needed software, see the links in the Schedule page."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2-1",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-2-1",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 2",
+    "text": "Example 2\nOld:\n\\[\\begin{align}\n\\dot U & = n - d_U U - bUV \\\\\n\\dot I & = bUV - d_I I \\\\\n\\dot V & = (1-e)pI - d_V V - gb UV \\\\\n\\end{align}\\]\nNew\n\\[\\begin{align}\ne & = E_{max} \\frac{C^k}{C^k+C_{50}} \\qquad \\textrm{(PD)} \\\\\n\\dot C & =  - d_C C \\qquad \\textrm{(PK)} \\\\\nC & =C+C_0 \\textrm{ at } t = t_{interval}  \n\\end{align}\\]\n\nThis is implemented in the Pharmacokinetics and Pharmacodynamics app in DSAIRM. Explore at your own leisure."
   },
   {
-    "objectID": "Course_Syllabus.html",
-    "href": "Course_Syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Instructors: Paul Thomas and Andreas Handel\nCourse Meeting Time and Location: See Schedule"
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 3",
+    "text": "Example 3\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - pBI \\color{blue}{- f(C)B}\\\\\n\\dot{I} & = r BI - d_I I \\\\\n\\color{blue}{\\dot{C}} & \\color{blue}{= ?}\n\\end{aligned}\n\\]\nA drug at concentration \\(C\\) leads to extra killing of bacteria (PD). The drug has some time-course (PK)."
   },
   {
-    "objectID": "Course_Syllabus.html#course-information",
-    "href": "Course_Syllabus.html#course-information",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Instructors: Paul Thomas and Andreas Handel\nCourse Meeting Time and Location: See Schedule"
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3-1",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#example-3-1",
+    "title": "Modeling vaccines and drugs",
+    "section": "Example 3",
+    "text": "Example 3\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - k_IBI  - eB\\\\\n\\dot{I} & = r BI - d_I I \\\\\n\\dot C & =  - d_C C, \\qquad C=C+C_0 \\textrm{ at } t = t_{interval} \\qquad \\textrm{(PK)}\\\\\ne & = E_{max} \\frac{C^n}{C^n+C_{50}} \\qquad \\textrm{(PD)}\n\\end{aligned}\n\\]\n\nThe bad news: This model is not part of DSAIRM.\nThe good news: We can build it ourselves! (DSAIRM Level 3.)"
   },
   {
-    "objectID": "Course_Syllabus.html#textbook-and-other-course-material",
-    "href": "Course_Syllabus.html#textbook-and-other-course-material",
-    "title": "Syllabus",
-    "section": "Textbook and Other Course Material",
-    "text": "Textbook and Other Course Material\nAll course materials are provided. We link to all materials you need and explain how to get them."
+    "objectID": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#hands-on-exercise",
+    "href": "andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html#hands-on-exercise",
+    "title": "Modeling vaccines and drugs",
+    "section": "Hands-on exercise",
+    "text": "Hands-on exercise\n\nGet the code/simulation model for the Basic Bacteria model and the PK/PD model, namely simulate_basicbacteria_ode.R and simulate_pkpdmodel_ode.R.\nTake a look at both R files. All the stuff at the top (any line that starts with #') is just documentation and you can mostly ignore.\nMake a copy of simulate_pkpdmodel_ode.R. You can delete the documentation portion. Modify the code by replacing the \\(U/I/V\\) part of the model with the \\(B/I\\) part from the bacteria model.\nDefinitions/letters for some parameters might have changed between apps. Make sure you call/define them correctly.\nThis might be a bit challenging, but we’ll assist."
   },
   {
-    "objectID": "Course_Syllabus.html#course-description",
-    "href": "Course_Syllabus.html#course-description",
-    "title": "Syllabus",
-    "section": "Course Description",
-    "text": "Course Description\nThis course provides an introduction to simulation modeling of pathogens and the immune response on the within-host level.\nYou will learn the basic biology and immunology of several common pathogens. You will also learn about simulation models and how they can be used to study pathogen and immune response dynamics within an infected host.\nThis course is an introductory overview course. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. But you are certainly welcome and encouraged to dig deeper, and we will provide information and resources to allow you to learn more about the topics we cover."
-  },
-  {
-    "objectID": "Course_Syllabus.html#grading",
-    "href": "Course_Syllabus.html#grading",
-    "title": "Syllabus",
-    "section": "Grading",
-    "text": "Grading\nThis course has no grades. You will get a certificate of completion at the end."
-  },
-  {
-    "objectID": "Course_Syllabus.html#class-attendance",
-    "href": "Course_Syllabus.html#class-attendance",
-    "title": "Syllabus",
-    "section": "Class Attendance",
-    "text": "Class Attendance\nAttendance is not required, but we hope you will attend all sessions. We also hope that you will be an active participant and ask questions, join discussions, and contribute in any way you feel willing and able."
-  },
-  {
-    "objectID": "Course_Syllabus.html#prerequisites",
-    "href": "Course_Syllabus.html#prerequisites",
-    "title": "Syllabus",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWe assume you have some basic biological and computer literacy. Some of you may know a good bit of immunology, or have solid statistical, modeling or coding experience. We understand everyone will come with different skill sets. Since this is an introductory course, we try to make things as understandable as possible for everyone. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging).\nWe “promise” that you will be both bored and confused at least once during the course 😁. We hope that you will still find the majority of the material we teach interesting and helpful. Please don’t hesitate to give us feedback during the course (in real time) if you think we are going too slow or too fast, or could otherwise improve."
-  },
-  {
-    "objectID": "Course_Syllabus.html#getting-help",
-    "href": "Course_Syllabus.html#getting-help",
-    "title": "Syllabus",
-    "section": "Getting Help",
-    "text": "Getting Help\nIf you have questions about any aspect of the course, please do not hesitate to talk to us."
-  },
-  {
-    "objectID": "Course_Syllabus.html#course-outline",
-    "href": "Course_Syllabus.html#course-outline",
-    "title": "Syllabus",
-    "section": "Course Outline",
-    "text": "Course Outline\nFor an outline of the course, please see the course Schedule document."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#basic-bacteria-infection-model",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#basic-bacteria-infection-model",
-    "title": "Bacterial Infection models",
-    "section": "Basic bacteria infection model",
-    "text": "Basic bacteria infection model\n\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - kBI\\\\\n\\dot{I} & = r BI - d_I I\n\\end{aligned}\n\\]\n\nCan also be other extracellular organisms. Probably not ideal for intra-cellular bacteria (e.g., TB)."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#extended-bacteria-infection-model",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#extended-bacteria-infection-model",
-    "title": "Bacterial Infection models",
-    "section": "Extended bacteria infection model",
-    "text": "Extended bacteria infection model\n\n\\[\\begin{align}\n\\dot B &= g B (1-\\frac{B}{B_{max}}) - d_B B - k_I B I - k_A B A \\\\\n\\dot I &= r_I B (1 -\\frac{I}{I_{max}} )  - d_I I \\\\\n\\dot A &= r_A \\frac{\\log(I)}{h+\\log(I)} A  - d_A A\n\\end{align}\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-uses",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-uses",
-    "title": "Bacterial Infection models",
-    "section": "Model uses",
-    "text": "Model uses"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration",
-    "text": "Model Exploration\n\nLooking at the dynamics (time-series) of a model can be useful.\nOften, we are not mainly interested in the time series, but instead some more specific quantity, e.g. total number of pathogen/infected cells, steady state values, etc.\nWe usually want to to know how such outcome(s) of interest vary with some parameter(s).\nWhat do we need to do to answer that question?"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-1",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-1",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration",
-    "text": "Model Exploration\n\nChoose some parameter values.\nRun the simulation model.\nRecord quantities/outcomes of interest.\nChoose another set of parameter values (usually we only vary one at a time).\nRepeat steps 2-4 until you got all parameter-outcome pairs of interest.\nReport (e.g. plot) your findings."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration example 1",
-    "text": "Model Exploration example 1\n\nQuestion: How does drug dosing impact the emergence of drug resistance in the presence of different types of immune responses?\nApproach: Build several simple models and explore (after Handel et al 2009 JTB).\n\n\\[\n\\begin{aligned}\n\\dot{B_s} & = (1-\\mu)g_s B_s(1-\\frac{B_s+B_r}{B_{max}})  -k_I I B_s - \\frac{k_s C}{C+C_{50}^s} B_s\\\\\n\\dot{B_r} & = (\\mu g_s B_s + g_r B_r)(1-\\frac{B_s+B_r}{B_{max}})  -k_I I B_r - \\frac{k_r C}{C+C_{50}^r} B_r\\\\\n\\dot{I} & = r (B_s+B_n)-d_I I   \\\\\n\\dot C & =  - d_C C, \\qquad C=C+C_0 \\textrm{ at } t = t_{interval} \\\\\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-1",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-1",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration example 1",
-    "text": "Model Exploration example 1\n\nFig 3 of Handel 2009 JTB. IR: dotted lines. Sensitive strain: dashed lines. Resistant strains: solid gray (high fitness) and black (low fitness) lines. 4 different immune response models."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-2",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-2",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration example 1",
-    "text": "Model Exploration example 1\n\nVary drug concentration, explore time for resistance to emerge.\n\n\nFig 5 of Handel 2009 JTB"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration example 2",
-    "text": "Model Exploration example 2\n\nQuestion: How dose the antigen dose for a killed (influenza) vaccine affect antibody levels post vaccination?\nApproach: Build a simple model and explore (after Handel et al 2018 PCB).\n\n\\[\n\\begin{aligned}\n\\dot V &=  - d_V V  - k_A AV \\\\\n\\dot F &= p_F - d_F F + \\frac{V}{V+ h_V}g_F(F_{max}-F)  \\\\\n\\dot B & = \\frac{F V}{F V + h_F} g_B B \\\\\n\\dot A & = r_A B - d_A A - k_A A V\n\\end{aligned}\n\\] (This is a simpler version of the virus and immune response DSAIRM model.)"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2-1",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-2-1",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration example 2",
-    "text": "Model Exploration example 2\nRun model for different antigen doses (\\(V_0\\))."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-3",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-example-1-3",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration example 1",
-    "text": "Model Exploration example 1\n\n\n\nRun model for different \\(V_0\\), record antibodies \\(A\\) at end of each simulation for each \\(V_0\\).\nUse this equation to compute protection as a function of antibody level. \\(P= 1 - \\frac{1}{e^{k_1(\\log(A)-k_2)}}\\)"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-comments",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-comments",
-    "title": "Bacterial Infection models",
-    "section": "Exploration comments",
-    "text": "Exploration comments\n\nIf the system/question is very simple, we might not need a model.\nInteractions among pathogens and the immune response are often complex. If we know little about our system and its behavior, building and exploring simple models is often a useful first step."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#back-to-bacteria",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#back-to-bacteria",
-    "title": "Bacterial Infection models",
-    "section": "Back to bacteria",
-    "text": "Back to bacteria\n\nAssume we think this model is a good approximation for a real system we are interested in.\nWe want to explore/predict the peak burden of bacteria if we were able to increase the induction of the immune response (parameter \\(r\\)), e.g. by giving a drug.\n\n\\[\n\\begin{aligned}\n\\dot{B} & = g B(1-\\frac{B}{B_{max}}) - d_B B - kBI\\\\\n\\dot{I} & = r BI - d_I I\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-2",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#model-exploration-2",
-    "title": "Bacterial Infection models",
-    "section": "Model Exploration",
-    "text": "Model Exploration\n\nChoose some parameter values.\nRun the simulation model.\nRecord quantities/outcomes of interest. Here: \\(B\\) at peak.\nChoose another set of parameter values (usually we only vary one at a time). Here: \\(r\\).\nRepeat steps 2-4 until you got all parameter-outcome pairs of interest.\nReport (e.g. plot) your findings."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-exercise",
-    "href": "andreas-presentations/modeling-bacterial-infections/Bacteria_Models_Slides.html#exploration-exercise",
-    "title": "Bacterial Infection models",
-    "section": "Exploration exercise",
-    "text": "Exploration exercise\nComplete Beginner: Tedious: Run the Basic Bacteria Model app repeatedly for different values of \\(r\\), record \\(B_{max}\\) for each run. Then plot the results. Easier: Use the Bacteria Model Exploration app to answer the question.\nAdvanced Beginner: Start an R script. Write code that implements a loop over a parameter of your choice, for each value calls the simulate_basicbacteria_ode() model function, and computes some outcome of interest. If needed, you can copy/paste/modify the solution from task 6 you looked at as homework.\nIntermediate: Use the Extended Bacteria Model app and write some R code to loop over 2 (or more) parameters of your choice and plot the results (whatever outcome you consider interesting to explore).\nAdvanced: Extend the code of the Extended Bacteria Model (for instance by implementing 2 innate response players, such as NK cells and IFN-gamma). Then explore some outcome of your choice as a function of some of the model parameters."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#approximate-virus-infection-model",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#approximate-virus-infection-model",
-    "title": "Viral Infection models",
-    "section": "Approximate virus infection model",
-    "text": "Approximate virus infection model\n\\[\n\\begin{aligned}\n\\dot{V} & = g V(1-\\frac{V}{V_{max}}) - d_V V - kVI\\\\\n\\dot{I} & = r VI - d_I I\n\\end{aligned}\n\\]\n\nSimple.\nNot very mechanistic.\nCan lead to patterns that are not too realistic."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model",
-    "title": "Viral Infection models",
-    "section": "Basic acute virus infection model",
-    "text": "Basic acute virus infection model\n\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Cells} \\qquad \\dot{U} & =  ? \\\\\n\\textrm{Infected Cells} \\qquad \\dot{I} & =  ? \\\\     \n\\textrm{Virus} \\qquad  \\dot{V} & =  ?\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model-1",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-acute-virus-infection-model-1",
-    "title": "Viral Infection models",
-    "section": "Basic acute virus infection model",
-    "text": "Basic acute virus infection model\n\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Cells} \\qquad \\dot{U} & =   - bUV \\\\\n\\textrm{Infected Cells} \\qquad \\dot{I} & =  bUV - d_I I \\\\     \n\\textrm{Virus} \\qquad  \\dot{V} & =  pI - d_V V -  bg UV\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-chronic-virus-infection-model",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-chronic-virus-infection-model",
-    "title": "Viral Infection models",
-    "section": "Basic chronic virus infection model",
-    "text": "Basic chronic virus infection model\n\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Cells} \\qquad \\dot{U} & = \\color{blue}{n -d_U U} - bUV \\\\\n\\textrm{Infected Cells} \\qquad \\dot{I} & =  bUV - d_I I \\\\     \n\\textrm{Virus} \\qquad  \\dot{V} & =  pI - d_V V -  bg UV\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-virus-infection-models",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#basic-virus-infection-models",
-    "title": "Viral Infection models",
-    "section": "Basic virus infection models",
-    "text": "Basic virus infection models\n\nDynamics of simple viral infection models. A) acute infection. B) chronic infection."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#notation-variability",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#notation-variability",
-    "title": "Viral Infection models",
-    "section": "Notation variability",
-    "text": "Notation variability\n\nI’m trying to use the same letters for variables and parameters in these materials.\nIf you read the literature, you’ll see all kinds of variants.\n\n\\[\n\\dot{T} = s - uT - \\beta T V \\\\\n\\dot{T^*}  =  \\beta T V - d T^* \\\\\n\\dot{V}  =  NdT^* - c V -  \\beta g TV\n\\] \\[\n\\dot{x} = \\lambda - dx - \\beta x v \\\\\n\\dot{y}  =  \\beta x v - a y \\\\\n\\dot{v}  =  \\kappa y - u v -  \\beta g xv\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models",
-    "title": "Viral Infection models",
-    "section": "Diagrams and Models",
-    "text": "Diagrams and Models\n\nIt is important to go back and forth between words, diagrams, equations.\nDiagrams specify a model somewhat, but not completely."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models-1",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#diagrams-and-models-1",
-    "title": "Viral Infection models",
-    "section": "Diagrams and Models",
-    "text": "Diagrams and Models\nThe virus model diagram could be implemented as continuous or discrete (or stochastic) model.\n\n\\[\n\\begin{aligned}\n\\dot{U} & = n -d_U U - bUV \\\\\n\\dot{I} & =  bUV - d_I I \\\\     \n\\dot{V} & =  pI - d_V V -  bg UV\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nU_{t+dt} & = U_{t} + dt(n -d_U U_t - bU_tV_t) \\\\\nI_{t+dt} & = I_{t} + dt( bU_tV_t - d_I I_t )\\\\     \nV_{t+dt} & = V_{t} + dt( pI_t - d_V V_t -  bg U_t V_t )\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration",
-    "title": "Viral Infection models",
-    "section": "Model Exploration",
-    "text": "Model Exploration\nExplore the “Basic Virus Model” app in DSAIRM"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-models",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-models",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Models",
-    "text": "Virus and Immune Response Models\n\nThe immune response is incredibly complex, we still don’t know how to model it in much detail.\nWe can nevertheless build and explore models that are a (hopefully) good balance between realism and abstraction."
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 1",
-    "text": "Virus and Immune Response Model 1\n\nU - uninfected cells\nI - infected cells\nV - (free) virus\nF - innate (interferon) response\nT - adaptive (T-cell) response"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-1",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-1",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 1",
-    "text": "Virus and Immune Response Model 1"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-2",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-1-2",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 1",
-    "text": "Virus and Immune Response Model 1\n\\[\\begin{aligned}\n\\dot U & = - b U V  \\\\\n\\dot I & = b U V - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = r_T T F - d_T T\n\\end{aligned}\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 2",
-    "text": "Virus and Immune Response Model 2\n\nU - uninfected cells\nI - infected cells\nV - (free) virus\nF - innate (interferon) response\nT - adaptive (T-cell) response"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-1",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-1",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 2",
-    "text": "Virus and Immune Response Model 2"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-2",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-2-2",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 2",
-    "text": "Virus and Immune Response Model 2\n\\[\\begin{aligned}\n\\dot U & = n - d_U U - b U V  \\\\\n\\dot I & = bUV - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = r_T T V - d_T T\n\\end{aligned}\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#models-1-and-2",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#models-1-and-2",
-    "title": "Viral Infection models",
-    "section": "Models 1 and 2",
-    "text": "Models 1 and 2\n\n\n\\[\\begin{aligned}\n\\dot U & = - b U V  \\\\\n\\dot I & = b U V - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = r_T T F - d_T T\n\\end{aligned}\\]\n\n\\[\\begin{aligned}\n\\dot U & = \\color{blue}{n - d_U U} - b U V  \\\\\n\\dot I & = bUV - d_I I - k_T T I   \\\\\n\\dot V & = \\frac{p}{1+k_F F}I - d_V V - gb UV \\\\\n\\dot F & = r_F I - d_F F \\\\\n\\dot T & = \\color{blue}{r_T T V} - d_T T\n\\end{aligned}\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-3",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#virus-and-immune-response-model-3",
-    "title": "Viral Infection models",
-    "section": "Virus and Immune Response Model 3",
-    "text": "Virus and Immune Response Model 3\n\nU - uninfected cells\nI - infected cells\nV - (free) virus\nF - innate immune response\nT - CD8 T-cells\nB - B-cells\nA - Antibodies"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-diagram",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-diagram",
-    "title": "Viral Infection models",
-    "section": "Model Diagram",
-    "text": "Model Diagram"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-equations",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-equations",
-    "title": "Viral Infection models",
-    "section": "Model Equations",
-    "text": "Model Equations\n\\[\n\\dot U = n - d_U U - bUV\\\\\n\\dot I = bUV - d_I I - k_T T I\\\\\n\\dot V = \\frac{pI}{1+s_F F} - d_V V - b UV - k_A AV \\\\\n\\dot F = p_F - d_F F + \\frac{V}{V+ h_V}g_F(F_{max}-F)  \\\\\n\\dot T = F V g_T + r_T T\\\\\n\\dot B = \\frac{F V}{F V + h_F} g_B B \\\\\n\\dot A = r_A B - d_A A - k_A A V\n\\]"
-  },
-  {
-    "objectID": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration-1",
-    "href": "andreas-presentations/modeling-viral-infections/Virus_Models_Slides.html#model-exploration-1",
-    "title": "Viral Infection models",
-    "section": "Model Exploration",
-    "text": "Model Exploration\nExplore any/all of the “IR” models in the virus models section"
-  },
-  {
-    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#phages",
-    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#phages",
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#bacteriophages",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#bacteriophages",
     "title": "Phage modeling",
-    "section": "Phages",
-    "text": "Phages\n\nAre viruses of bacteria\nOften kill bacteria (lytic phage)\nHave been considered as treatment options\nHave been studied with models"
+    "section": "(Bacterio)Phages",
+    "text": "(Bacterio)Phages\n\nAre viruses of bacteria\nOften kill bacteria (lytic phage)\nHave been considered as treatment options\nHave been studied with models"
   },
   {
     "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#phage-modeling-example",
@@ -749,27 +784,6 @@
     "text": "Outcome as function of phage property\n\nOutcome = number of phages needed to reduce bacteria 100-fold\nPhage property = parameter values of the model"
   },
   {
-    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#outcome-as-function-of-phage-property-1",
-    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#outcome-as-function-of-phage-property-1",
-    "title": "Phage modeling",
-    "section": "Outcome as function of phage property",
-    "text": "Outcome as function of phage property"
-  },
-  {
-    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#bacteriophages",
-    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#bacteriophages",
-    "title": "Phage modeling",
-    "section": "(Bacterio)Phages",
-    "text": "(Bacterio)Phages\n\nAre viruses of bacteria\nOften kill bacteria (lytic phage)\nHave been considered as treatment options\nHave been studied with models"
-  },
-  {
-    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#conclusion",
-    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#conclusion",
-    "title": "Phage modeling",
-    "section": "Conclusion",
-    "text": "Conclusion\nA mathematical model of phage therapy suggests which phage characteristics are most likely to impact treatment outcomes and thus should be prioritized when trying to improve phages."
-  },
-  {
     "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#results",
     "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#results",
     "title": "Phage modeling",
@@ -782,5 +796,12 @@
     "title": "Phage modeling",
     "section": "Results",
     "text": "Results"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#conclusion",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#conclusion",
+    "title": "Phage modeling",
+    "section": "Conclusion",
+    "text": "Conclusion\nA mathematical model of phage therapy suggests which phage characteristics are most likely to impact treatment outcomes and thus should be prioritized when trying to improve phages."
   }
 ]

@@ -89,9 +89,11 @@ Unit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas)
 - [Slides](andreas-presentations/modeling-vaccines-drugs/Vaccines_Drugs_Slides.html){target="_blank"}
 <!-- - [Code 1](files/simulate_pkpdbacteria_ode.R), [Code 2](files/test_pkpdbacteria.R). -->
 
-Unit 9, 1:30PM – 3PM: Requested topics and a worked modeling example I 
+Unit 9, 1:30PM – 3PM: Requested topics I 
 
-Unit 10, 3.30PM – 5PM: Requested topics and a worked modeling example II 
+Unit 10, 3.30PM – 5PM: Requested topics II 
+- [Phage Modeling Slides](andreas-presentations/phage-modeling/Phage_Modeling.html){target="_blank"}
+- [HBV Modeling Slides](andreas-presentations/hbv-modeling/HBV_Modeling.html){target="_blank"}
 
 
 
