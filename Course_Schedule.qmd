@@ -90,6 +90,7 @@ Unit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas)
 - [Code 1](files/simulate_pkpdbacteria_ode.R), [Code 2](files/test_pkpdbacteria.R).
 
 Unit 9, 1:30PM – 3PM: Requested topics I 
+- [Special Topics Immunology](paul-presentations/2026-Special-Topics.pdf){target="_blank"}
 
 Unit 10, 3.30PM – 5PM: Requested topics II 
 - [Phage Modeling Slides](andreas-presentations/phage-modeling/Phage_Modeling.html){target="_blank"}
