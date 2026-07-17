@@ -10,7 +10,8 @@ format:
     transition: none
     incremental: false
     cap-location: bottom
-    self-contained: true
+    embed-resources: true
+    self-contained-math: true
     slide-number: true
     show-slide-number: all
     auto-stretch: true

@@ -712,5 +712,75 @@
     "title": "Viral Infection models",
     "section": "Model Exploration",
     "text": "Model Exploration\nExplore any/all of the “IR” models in the virus models section"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#phages",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#phages",
+    "title": "Phage modeling",
+    "section": "Phages",
+    "text": "Phages\n\nAre viruses of bacteria\nOften kill bacteria (lytic phage)\nHave been considered as treatment options\nHave been studied with models"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#phage-modeling-example",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#phage-modeling-example",
+    "title": "Phage modeling",
+    "section": "Phage modeling example",
+    "text": "Phage modeling example\nModeling the Phage Properties Best for Therapy\n“…The approach here involves three conceptual steps. The first is to construct a computa- tional model to represent an infection and possible treatments. Second, a criterion is chosen to represent success versus failure from treatment. Third, different possible treatment designs or variables (i.e., phage characteristics) are numerically investigated to decide how often success results…”"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#a-phage-model",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#a-phage-model",
+    "title": "Phage modeling",
+    "section": "A phage model",
+    "text": "A phage model\n\\[\n\\begin{aligned}\n\\textrm{Uninfected Bacteria} \\qquad \\dot{B} & = rB - dB   - kBP \\\\\n\\textrm{Infected Bacteria} \\qquad \\dot{I} & =  kBP - d I  - \\lambda I\\\\     \n\\textrm{Phage} \\qquad  \\dot{P} & =  b \\lambda I - \\delta P -  kBP\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#a-phage-model-1",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#a-phage-model-1",
+    "title": "Phage modeling",
+    "section": "A phage model",
+    "text": "A phage model"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#outcome-as-function-of-phage-property",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#outcome-as-function-of-phage-property",
+    "title": "Phage modeling",
+    "section": "Outcome as function of phage property",
+    "text": "Outcome as function of phage property\n\nOutcome = number of phages needed to reduce bacteria 100-fold\nPhage property = parameter values of the model"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#outcome-as-function-of-phage-property-1",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#outcome-as-function-of-phage-property-1",
+    "title": "Phage modeling",
+    "section": "Outcome as function of phage property",
+    "text": "Outcome as function of phage property"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#bacteriophages",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#bacteriophages",
+    "title": "Phage modeling",
+    "section": "(Bacterio)Phages",
+    "text": "(Bacterio)Phages\n\nAre viruses of bacteria\nOften kill bacteria (lytic phage)\nHave been considered as treatment options\nHave been studied with models"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#conclusion",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#conclusion",
+    "title": "Phage modeling",
+    "section": "Conclusion",
+    "text": "Conclusion\nA mathematical model of phage therapy suggests which phage characteristics are most likely to impact treatment outcomes and thus should be prioritized when trying to improve phages."
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#results",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#results",
+    "title": "Phage modeling",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "andreas-presentations/phage-modeling/Phage_Modeling.html#results-1",
+    "href": "andreas-presentations/phage-modeling/Phage_Modeling.html#results-1",
+    "title": "Phage modeling",
+    "section": "Results",
+    "text": "Results"
   }
 ]
