@@ -102,7 +102,7 @@
     "href": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#phenomenological-models",
     "title": "Introduction to Simulation Modeling",
     "section": "Phenomenological models",
-    "text": "Phenomenological models\n\n\n\nYou might be familiar with statistical models (that includes Machine Learning, AI, Deep Learning,…).\nMost of those models are phenomenological/non-mechanistic (and static).\nThose models are used extensively in all areas of science.\nThe main goal of these models is to understand data/patterns and make predictions.\n\n\n\n\n\n\n\nxkcd.com"
+    "text": "Phenomenological models\n\n\n\nYou might be familiar with statistical models (that includes Machine Learning, AI, Deep Learning,…).\nMost of those models are phenomenological/non-mechanistic (and static).\nThose models are used extensively in all areas of science.\nThe main goal of these models is to understand data/patterns and make predictions.\n\n\n\n\n\nxkcd.com"
   },
   {
     "objectID": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#non-mechanistic-model-example",
@@ -123,14 +123,14 @@
     "href": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#non-mechanistic-models---disadvantages",
     "title": "Introduction to Simulation Modeling",
     "section": "Non-mechanistic models - Disadvantages",
-    "text": "Non-mechanistic models - Disadvantages\n\n\n\nThe jump from correlation to causation is always tricky (bias/confounding/systematic errors).\nEven if we can assume a causal relation, we do not gain a lot of mechanistic insights or deep understanding of the system.\n\n\n\n\n\n\n\nxkcd.com"
+    "text": "Non-mechanistic models - Disadvantages\n\n\n\nThe jump from correlation to causation is always tricky (bias/confounding/systematic errors).\nEven if we can assume a causal relation, we do not gain a lot of mechanistic insights or deep understanding of the system.\n\n\n\n\n\nxkcd.com"
   },
   {
     "objectID": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#mechanistic-models",
     "href": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#mechanistic-models",
     "title": "Introduction to Simulation Modeling",
     "section": "Mechanistic models",
-    "text": "Mechanistic models\n\n\n\nWe formulate explicit mechanisms/processes driving the system dynamics.\nThis is done using mathematical equations (often ordinary differential equations), or computer rules.\nAlso called systems/dynamic(al)/ (micro)simulation/process/ mathematical/ODE/… models.\n\n\n\n\n\n\n\nHandel et al 2020 NRI"
+    "text": "Mechanistic models\n\n\n\nWe formulate explicit mechanisms/processes driving the system dynamics.\nThis is done using mathematical equations (often ordinary differential equations), or computer rules.\nAlso called systems/dynamic(al)/ (micro)simulation/process/ mathematical/ODE/… models.\n\n\n\n\n\nHandel et al 2020 NRI"
   },
   {
     "objectID": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#mechanistic-model-example",
@@ -333,7 +333,7 @@
     "href": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#model-exploration",
     "title": "Introduction to Simulation Modeling",
     "section": "Model exploration",
-    "text": "Model exploration\n\n\nWe could analyze the model behavior with ‘pencil and paper’ (or some software, e.g. Mathematica/Maxima). This only works for simple models.\nWe could analyze the model behavior by simulating it.\nTo simulate, we need to implement the model on a computer, specify starting (initial) conditions for all variables and values for all model parameters.\nWe’ll do those explorations shortly.\n\n\n\n\n\n\n\n\nHandel et al 2020 NRI"
+    "text": "Model exploration\n\n\nWe could analyze the model behavior with ‘pencil and paper’ (or some software, e.g. Mathematica/Maxima). This only works for simple models.\nWe could analyze the model behavior by simulating it.\nTo simulate, we need to implement the model on a computer, specify starting (initial) conditions for all variables and values for all model parameters.\nWe’ll do those explorations shortly.\n\n\n\n\n\n\nHandel et al 2020 NRI"
   },
   {
     "objectID": "andreas-presentations/introduction-to-modeling/introduction-to-modeling-slides.html#homework",
@@ -368,7 +368,7 @@
     "href": "Course_Schedule.html#course-schedule",
     "title": "SISMID 2026 Course Schedule",
     "section": "Course schedule",
-    "text": "Course schedule\n\nWednesday 7/15\nUnit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - Slides\nUnit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) \nHomework for tomorrow:\n\nIf you haven’t already, take a look at the Basic Virus Model and Basic Bacteria Model apps in DSAIRM and go through - in as much detail as you have time - the “What to do” tasks. You can try yourself first, or walk through it with the help of the solutions: Basic Virus solution, Basic Bacteria solution.\nTake an especially close look at task 6 of the Basic Bacteria app and the solution code for it, we will use a similar approach tomorrow.\n\n\n\nThursday 7/16\nUnit 3, 9AM - 10.30AM: Immunology of viral infections (Paul) \nUnit 4, 11AM - 12.30PM: Modeling of viral infections (Andreas) - Slides\nUnit 5, 1:30PM – 3PM: Immunology of bacterial infections (Paul) \nUnit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) - Slides\n\n\nFriday 7/17\nUnit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul) \nUnit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas) - Slides \nUnit 9, 1:30PM – 3PM: Requested topics and a worked modeling example I\nUnit 10, 3.30PM – 5PM: Requested topics and a worked modeling example II"
+    "text": "Course schedule\n\nWednesday 7/15\nUnit 1, 1:30PM – 3PM: Introduction to Modeling (Andreas) - Slides\nUnit 2, 3.30PM – 5PM: Introduction to Immunology (Paul) - Slides\nHomework for tomorrow:\n\nIf you haven’t already, take a look at the Basic Virus Model and Basic Bacteria Model apps in DSAIRM and go through - in as much detail as you have time - the “What to do” tasks. You can try yourself first, or walk through it with the help of the solutions: Basic Virus solution, Basic Bacteria solution.\nTake an especially close look at task 6 of the Basic Bacteria app and the solution code for it, we will use a similar approach tomorrow.\n\n\n\nThursday 7/16\nUnit 3, 9AM - 10.30AM: Immunology of viral infections (Paul) - Slides\nUnit 4, 11AM - 12.30PM: Modeling of viral infections (Andreas) - Slides\nUnit 5, 1:30PM – 3PM: Immunology of bacterial infections (Paul) - Slides\nUnit 6 3.30PM – 5PM: Modeling of bacterial infections (Andreas) - Slides\n\n\nFriday 7/17\nUnit 7, 9AM - 10.30AM: Immunology of drug and vaccine treatments (Paul) - Slides\nUnit 8, 11AM - 12.30PM: Modeling drug and vaccine treatments (Andreas) - Slides \nUnit 9, 1:30PM – 3PM: Requested topics and a worked modeling example I\nUnit 10, 3.30PM – 5PM: Requested topics and a worked modeling example II"
   },
   {
     "objectID": "Course_Schedule.html#any-time-during-and-after-the-course",

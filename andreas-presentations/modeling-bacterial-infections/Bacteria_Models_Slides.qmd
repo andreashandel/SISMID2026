@@ -19,9 +19,7 @@ format:
 
 ## Basic bacteria infection model
 
-```{r bacteriadiagram,  fig.cap='',  echo=FALSE, out.width = "80%", fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig3a.png")
-```
+![](./media/nri_review_fig3a.png){width="80%" fig-align="center"}
 
 $$
 \begin{aligned}
@@ -34,9 +32,7 @@ $$
 
 ## Extended bacteria infection model
 
-```{r bacteriadiagram2,  fig.cap='',  echo=FALSE, out.width = "80%", fig.align='center'}
-knitr::include_graphics("./media/extendedbacteriamodel.png")
-```
+![](./media/extendedbacteriamodel.png){width="80%" fig-align="center"}
 
 ```{=tex}
 \begin{align}
@@ -47,9 +43,7 @@ knitr::include_graphics("./media/extendedbacteriamodel.png")
 ```
 ## Model uses
 
-```{r modelusefig,  echo=FALSE, fig.cap='', out.width = '90%', fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig1.png")
-```
+![](./media/nri_review_fig1.png){width="90%" fig-align="center"}
 
 ## Model Exploration
 
@@ -114,9 +108,7 @@ $$ (This is a simpler version of the virus and immune response DSAIRM model.)
 
 Run model for different antigen doses ($V_0$).
 
-```{r inoc1,  fig.cap='',  echo=FALSE, out.width = "90%", fig.align='center'}
-knitr::include_graphics("./media/inoculum_vaccine_pcb18.png")
-```
+![](./media/inoculum_vaccine_pcb18.png){width="90%" fig-align="center"}
 
 ## Model Exploration example 1
 
@@ -127,9 +119,7 @@ knitr::include_graphics("./media/inoculum_vaccine_pcb18.png")
 :::
 
 ::: {.column width="50%"}
-```{r inoc2,  fig.cap='',  echo=FALSE, out.width = "90%", fig.align='center'}
-knitr::include_graphics("./media/iavvaccine-inoculum.png")
-```
+![](./media/iavvaccine-inoculum.png){width="90%" fig-align="center"}
 :::
 :::
 
@@ -137,15 +127,11 @@ knitr::include_graphics("./media/iavvaccine-inoculum.png")
 
 <!-- ::: columns -->
 <!-- ::: {.column width="50%"} -->
-<!-- ```{r stickiness1,  echo=FALSE,  fig.align='center'} -->
-<!-- knitr::include_graphics("./media/stickinessmodel.jpg") -->
-<!-- ``` -->
+<!-- ![](./media/stickinessmodel.jpg){fig-align="center"} -->
 <!-- ::: -->
 
 <!-- ::: {.column width="50%"} -->
-<!-- ```{r stickiness2,  echo=FALSE,  fig.align='center'} -->
-<!-- knitr::include_graphics("./media/stickiness.png") -->
-<!-- ``` -->
+<!-- ![](./media/stickiness.png){fig-align="center"} -->
 <!-- ::: -->
 <!-- ::: -->
 
